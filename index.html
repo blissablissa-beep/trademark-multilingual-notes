@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trademark Multilingual Notes</title>
+  <meta name="description" content="A compact multilingual study app for the basics of Japanese trademark law.">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div>
+        <h1>Trademark Multilingual Notes</h1>
+        <p class="subtitle">Basic topics on Japanese trademark law in English, German, and Italian.</p>
+      </div>
+
+      <div class="header-controls">
+        <label class="control">
+          <span>Language</span>
+          <select id="languageSelect">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+          </select>
+        </label>
+
+        <label class="control search-control">
+          <span>Search</span>
+          <input id="searchInput" type="search" placeholder="Search topics, terms, tags">
+        </label>
+
+        <button id="bookmarkFilterBtn" class="secondary-btn" type="button" aria-pressed="false">
+          Bookmarks only
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div id="topicList" class="topic-list"></div>
+    </aside>
+
+    <section class="content">
+      <article id="detailCard" class="detail-card">
+        <p class="empty">Loading...</p>
+      </article>
+    </section>
+  </main>
+
+  <template id="topicItemTemplate">
+    <button class="topic-item" type="button">
+      <span class="topic-item-title"></span>
+      <span class="topic-item-meta"></span>
+    </button>
+  </template>
+
+  <script src="./app.js"></script>
+</body>
+</html>
