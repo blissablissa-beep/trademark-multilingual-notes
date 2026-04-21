@@ -72,7 +72,7 @@ function renderTopicList() {
 
     const title = topic.topic?.[STATE.lang] || topic.topic?.en || topic.id;
     node.querySelector('.topic-item-title').innerHTML = highlight(title, STATE.query);
-    const meta = `${topic.tags?.slice(0, 3).join(' Â· ') || ''}`;
+    const meta = `${topic.tags?.slice(0, 3).join(' · ') || ''}`;
     node.querySelector('.topic-item-meta').innerHTML = highlight(meta, STATE.query);
 
     node.addEventListener('click', () => {
