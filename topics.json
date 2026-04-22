@@ -328,5 +328,105 @@
     "related_terms": ["license", "exclusive license", "Madrid Protocol", "international registration"],
     "articles": ["30", "68-2"],
     "tags": ["license", "madrid", "international"]
+  },
+  {
+    "id": "tm-basic-0011",
+    "level": "basic",
+    "topic": {
+      "ja": "商標の類似判断：外観・称呼・観念",
+      "en": "Trademark similarity: appearance, sound, and concept",
+      "de": "Markenähnlichkeit: Erscheinungsbild, Klang und Bedeutung",
+      "it": "Somiglianza tra marchi: aspetto, suono e concetto"
+    },
+    "summary": {
+      "ja": "日本における商標の類似判断は、外観・称呼・観念の三つの観点から総合的に行われる。",
+      "en": "In Japan, trademark similarity is assessed by comparing appearance, sound, and conceptual meaning in an overall evaluation.",
+      "de": "In Japan wird die Markenähnlichkeit anhand von Erscheinungsbild, Klang und begrifflicher Bedeutung in einer Gesamtbetrachtung beurteilt.",
+      "it": "In Giappone, la somiglianza tra marchi viene valutata confrontando aspetto visivo, suono e significato concettuale in una valutazione complessiva."
+    },
+    "notes": {
+      "law": {
+        "ja": "外観は視覚的な印象、称呼は読み方・音の印象、観念は意味・概念の印象をそれぞれ比較する。いずれか一つが類似しても直ちに類似商標となるわけではなく、取引の実情を踏まえた総合判断が求められる。英国法の visual・aural・conceptual similarity の三要素と基本的に対応するが、日本では後述の「取引の実情」が加わる点が異なる。",
+        "en": "Appearance refers to visual impression, sound to phonetic impression, and concept to the meaning or idea conveyed. Similarity in one element alone does not automatically lead to a finding of overall similarity; a holistic judgment taking into account the circumstances of trade is required. This framework broadly corresponds to the visual, aural, and conceptual similarity analysis used in UK and EU trademark law, but Japanese law adds the further consideration of trade circumstances.",
+        "de": "Erscheinungsbild betrifft den visuellen Eindruck, Klang den phonetischen Eindruck und Bedeutung die vermittelte Idee oder den Sinn. Ähnlichkeit in einem Element allein führt nicht automatisch zu einer Gesamtähnlichkeit; eine Gesamtbetrachtung unter Berücksichtigung der Handelsverhältnisse ist erforderlich. Dieser Rahmen entspricht weitgehend der im britischen und EU-Markenrecht verwendeten Analyse, aber das japanische Recht ergänzt die Berücksichtigung der Handelsumstände.",
+        "it": "L'aspetto riguarda l'impressione visiva, il suono l'impressione fonetica e il concetto il significato o l'idea trasmessa. La somiglianza in un solo elemento non porta automaticamente a una conclusione di somiglianza complessiva; è richiesta una valutazione olistica che tenga conto delle circostanze commerciali. Questo quadro corrisponde in linea di massima all'analisi usata nel diritto dei marchi britannico ed europeo, ma il diritto giapponese aggiunge la considerazione delle circostanze commerciali."
+      },
+      "practice": {
+        "ja": "海外取引先に類似判断を説明する際は、英国・EU法の三要素と対応することを示しつつ、「取引の実情」という日本固有の要素が加わることを強調する。単純な名称比較では不十分であることをまず伝えること。",
+        "en": "When explaining the similarity framework to overseas partners, it helps to map it onto the visual/aural/conceptual structure they may already know from UK or EU trademark law, while clearly flagging that Japanese law also considers the circumstances of trade as an additional factor. Always stress that name comparison alone is insufficient.",
+        "de": "Bei der Erläuterung des Ähnlichkeitsrahmens gegenüber ausländischen Partnern ist es hilfreich, ihn auf die visuell/aurale/konzeptuelle Struktur abzubilden, die sie möglicherweise aus dem britischen oder EU-Markenrecht kennen, während man klar darauf hinweist, dass das japanische Recht auch die Handelsumstände als zusätzlichen Faktor berücksichtigt.",
+        "it": "Quando si spiega il quadro della somiglianza a partner stranieri, è utile collegarlo alla struttura visivo/aurale/concettuale che potrebbero già conoscere dal diritto dei marchi britannico o europeo, sottolineando chiaramente che il diritto giapponese considera anche le circostanze commerciali come fattore aggiuntivo."
+      }
+    },
+    "related_terms": ["appearance", "sound", "concept", "overall impression", "similarity assessment"],
+    "articles": ["4"],
+    "tags": ["similarity", "appearance", "sound", "concept", "exam"]
+  },
+  {
+    "id": "tm-basic-0012",
+    "level": "basic",
+    "topic": {
+      "ja": "取引の実情の考慮",
+      "en": "Trade circumstances as a factor in similarity",
+      "de": "Handelsumstände als Ähnlichkeitsfaktor",
+      "it": "Le circostanze commerciali come fattore di somiglianza"
+    },
+    "summary": {
+      "ja": "日本の商標類似判断では、外観・称呼・観念に加え、需要者層や取引慣行などの取引の実情が考慮される。",
+      "en": "In Japan, similarity analysis goes beyond the three-element test to also consider the actual circumstances of trade, including the relevant consumer base and trade practices.",
+      "de": "In Japan geht die Ähnlichkeitsanalyse über den Drei-Elemente-Test hinaus und berücksichtigt auch die tatsächlichen Handelsverhältnisse, einschließlich der relevanten Verbrauchergruppe und Handelspraktiken.",
+      "it": "In Giappone, l'analisi della somiglianza va oltre il test dei tre elementi e considera anche le effettive circostanze commerciali, inclusi la base di consumatori rilevante e le pratiche commerciali."
+    },
+    "notes": {
+      "law": {
+        "ja": "取引の実情とは、当該商品・役務が実際にどのような需要者に、どのような流通経路で取引されているかを指す。例えば、専門家向け商品では需要者の識別力が高いため、一般消費者向けより類似の幅が狭くなりうる。また、商品の性質（高額品か日用品か）や購買行動も判断に影響する。英国法が「average consumer」の全体的印象を中心に据えるのに対し、日本法は取引実態をより具体的に考慮する点で異なる。",
+        "en": "Trade circumstances refer to how the goods or services in question are actually traded: to which consumers, through which channels, and under what conditions. For example, where goods are directed at specialists, the consumer's ability to distinguish marks may be higher, potentially narrowing the scope of similarity compared with mass-market goods. The nature of the goods (luxury vs. everyday items) and purchasing behavior also influence the assessment. Unlike UK law, which centers on the overall impression of an average consumer, Japanese law invites a more fact-specific inquiry into actual trade conditions.",
+        "de": "Handelsumstände beziehen sich darauf, wie die betreffenden Waren oder Dienstleistungen tatsächlich gehandelt werden: an welche Verbraucher, über welche Kanäle und unter welchen Bedingungen. Wo Waren an Spezialisten gerichtet sind, kann die Unterscheidungsfähigkeit höher sein, was den Ähnlichkeitsbereich gegenüber Massenprodukten einengen kann. Anders als das britische Recht, das sich auf den Gesamteindruck eines Durchschnittsverbrauchers konzentriert, lädt das japanische Recht zu einer faktenspezifischeren Untersuchung der tatsächlichen Handelsbedingungen ein.",
+        "it": "Le circostanze commerciali si riferiscono a come i prodotti o servizi in questione vengono effettivamente commercializzati: a quali consumatori, attraverso quali canali e in quali condizioni. Dove i prodotti sono destinati a specialisti, la capacità di distinguere i marchi può essere maggiore, restringendo potenzialmente la portata della somiglianza rispetto ai prodotti di massa. A differenza del diritto britannico, che si concentra sull'impressione complessiva di un consumatore medio, il diritto giapponese invita a un'indagine più specifica sui fatti delle condizioni commerciali effettive."
+      },
+      "practice": {
+        "ja": "類似性の評価が変わりうる要素として「誰が買うか」「どこで売られているか」を海外取引先に具体的に提示すると理解しやすい。同じ商標でも、医薬品市場と日用品市場では結論が異なる可能性があることを例示すると効果的。",
+        "en": "When explaining this to overseas partners, grounding it in concrete examples is effective: point out that the same pair of marks might be found similar in a mass-market context but not in a specialist professional market, because the relevant consumers differ. The questions 'who buys this?' and 'where is it sold?' are practical anchors for the discussion.",
+        "de": "Bei der Erklärung gegenüber ausländischen Partnern ist eine Verankerung in konkreten Beispielen wirksam: Dasselbe Markenpaar könnte in einem Massenmarktkontext ähnlich, aber nicht in einem Fachmarkt sein, weil die relevanten Verbraucher unterschiedlich sind.",
+        "it": "Quando si spiega questo a partner stranieri, è efficace ancorare la discussione in esempi concreti: la stessa coppia di marchi potrebbe essere ritenuta simile in un contesto di mercato di massa ma non in un mercato professionale specializzato, perché i consumatori rilevanti differiscono."
+      }
+    },
+    "related_terms": ["trade circumstances", "relevant consumer", "purchasing behavior", "specialist market"],
+    "articles": ["4"],
+    "tags": ["similarity", "trade circumstances", "consumer", "exam"]
+  },
+  {
+    "id": "tm-basic-0013",
+    "level": "basic",
+    "topic": {
+      "ja": "称呼類似の実務",
+      "en": "Phonetic similarity in practice",
+      "de": "Phonetische Ähnlichkeit in der Praxis",
+      "it": "Somiglianza fonetica nella pratica"
+    },
+    "summary": {
+      "ja": "称呼（読み・音）の類似は商標の混同を招く最大の要因の一つであり、日本語特有の音韻的問題も実務上重要である。",
+      "en": "Phonetic similarity is one of the most frequent causes of trademark confusion, and Japan-specific phonological issues add further complexity in practice.",
+      "de": "Phonetische Ähnlichkeit ist eine der häufigsten Ursachen für Markenverwirrung, und japanspezifische phonologische Probleme erhöhen die Komplexität in der Praxis.",
+      "it": "La somiglianza fonetica è una delle cause più frequenti di confusione tra marchi, e i problemi fonologici specifici del giapponese aggiungono ulteriore complessità nella pratica."
+    },
+    "notes": {
+      "law": {
+        "ja": "称呼は商標を音として発音したときの印象で比較する。日本語では、漢字の音読み・訓読みの違い、カタカナ表記の揺れ（例：「コーヒー」と「コーヒ」）、外来語の音訳の差異などが称呼類似の判断を複雑にする。また、長い称呼では要部（最も印象に残る部分）の類似が重視される傾向がある。英国法でいう aural similarity に相当するが、日本語・英語・外来語が混在する環境ではより多くの変数が生じる。",
+        "en": "Phonetic similarity is assessed by comparing the impression created when each mark is spoken aloud. In Japanese practice, complicating factors include: the difference between on-yomi (Chinese reading) and kun-yomi (Japanese reading) of kanji; variation in katakana transcription of foreign words; and divergent phonetic renderings of loanwords. For longer marks, the dominant element—the part most likely to be retained in memory—tends to receive greater weight. This broadly corresponds to aural similarity in UK law, but the multilingual environment of Japanese commerce introduces additional variables.",
+        "de": "Phonetische Ähnlichkeit wird durch Vergleich des Eindrucks bewertet, der entsteht, wenn jede Marke laut ausgesprochen wird. In der japanischen Praxis gibt es erschwerende Faktoren wie den Unterschied zwischen On-Yomi und Kun-Yomi von Kanji sowie Variationen in der Katakana-Transkription von Fremdwörtern. Bei längeren Marken tendiert das dominante Element dazu, mehr Gewicht zu erhalten.",
+        "it": "La somiglianza fonetica viene valutata confrontando l'impressione creata quando ciascun marchio viene pronunciato ad alta voce. Nella pratica giapponese, i fattori complicanti includono: la differenza tra on-yomi e kun-yomi dei kanji; variazioni nella trascrizione katakana di parole straniere; e diverse rese fonetiche dei prestiti linguistici. Per i marchi più lunghi, l'elemento dominante tende a ricevere maggiore peso."
+      },
+      "practice": {
+        "ja": "外来語ブランドを日本市場に導入する際は、カタカナ表記が既存商標の称呼に類似しないか事前確認が必須。同一の外来語でも複数のカタカナ表記が存在することがあるため、想定されるすべての表記について調査する必要がある。また、日本語話者が自然に発音したときの音と、原語の発音とが大きく異なる場合があることにも注意。",
+        "en": "When introducing a foreign-language brand into the Japanese market, it is essential to check in advance whether any likely katakana rendering conflicts phonetically with existing registered marks. The same foreign word may have multiple katakana spellings in circulation, so the clearance search should cover all plausible transcriptions. Also note that the way Japanese speakers naturally pronounce a foreign brand can differ substantially from the original-language pronunciation, which affects the phonetic comparison.",
+        "de": "Bei der Einführung einer fremdsprachigen Marke in den japanischen Markt ist es unerlässlich, im Voraus zu prüfen, ob eine wahrscheinliche Katakana-Darstellung phonetisch mit bestehenden eingetragenen Marken kollidiert. Dasselbe Fremdwort kann mehrere Katakana-Schreibweisen haben, daher sollte die Recherche alle plausiblen Transkriptionen abdecken.",
+        "it": "Quando si introduce un marchio in lingua straniera nel mercato giapponese, è essenziale verificare in anticipo se una probabile resa katakana confligge foneticamente con marchi registrati esistenti. La stessa parola straniera può avere più grafie katakana in circolazione, quindi la ricerca preliminare dovrebbe coprire tutte le trascrizioni plausibili."
+      }
+    },
+    "related_terms": ["phonetic similarity", "katakana", "on-yomi", "kun-yomi", "dominant element", "aural similarity"],
+    "articles": ["4"],
+    "tags": ["similarity", "phonetic", "katakana", "japanese-specific", "exam"]
   }
+]
 ]
