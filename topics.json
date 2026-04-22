@@ -1003,5 +1003,154 @@
       "3D mark",
       "exam"
     ]
+  },
+  {
+    "id": "tm-basic-0023",
+    "level": "basic",
+    "topic": {
+      "ja": "4条1項19号：不正目的による著名商標の冒用",
+      "en": "Article 4(1)(xix): bad-faith use of a well-known foreign mark",
+      "de": "Artikel 4 Abs. 1 Nr. 19: bösgläubige Nutzung einer bekannten ausländischen Marke",
+      "it": "Articolo 4 comma 1 n. 19: uso in malafede di un marchio straniero notorio"
+    },
+    "summary": {
+      "ja": "日本国内外で需要者に広く認識されている他人の商標と同一・類似の商標を、不正の目的をもって使用する場合は登録できない。",
+      "en": "A mark identical or similar to another party's well-known mark, where the applicant intends to use it for unfair purposes, cannot be registered.",
+      "de": "Eine Marke, die mit der bekannten Marke einer anderen Partei identisch oder ähnlich ist und deren Anmelder eine unlautere Nutzung beabsichtigt, kann nicht eingetragen werden.",
+      "it": "Un marchio identico o simile al marchio notorio di un'altra parte, quando il richiedente intende usarlo per scopi sleali, non può essere registrato."
+    },
+    "notes": {
+      "law": {
+        "ja": "19号は、国内外の著名商標を不正目的で冒用する出願を排除するための規定。7号（公序良俗）と重なる場面もあるが、19号は「著名性」と「不正目的」の二要件が明示されている点で独自の意義を持つ。不正目的の典型例としては、①競業者の著名商標を先取りして使用料・売却料を得る目的、②著名商標の信用に便乗する目的、③競業者の日本市場参入を妨害する目的、などが挙げられる。著名性は国内外を問わず認められる。",
+        "en": "Item (xix) targets applications that seek to exploit a well-known mark, whether domestic or foreign, for unfair purposes. While it overlaps with item (vii) (public order), item (xix) has its own significance in that it explicitly requires both well-known status and unfair intent. Typical examples of unfair purpose include: seeking payment for use or transfer of the mark from the legitimate owner; free-riding on the reputation of a well-known mark; and blocking a competitor's entry into the Japanese market. Well-known status may be established domestically or internationally.",
+        "de": "Nr. 19 zielt auf Anmeldungen ab, die eine bekannte Marke, ob inländisch oder ausländisch, für unlautere Zwecke ausnutzen wollen. Während sie sich mit Nr. 7 überschneidet, hat Nr. 19 ihre eigene Bedeutung, da sie ausdrücklich sowohl Bekanntheit als auch unlautere Absicht erfordert. Typische Beispiele für unlautere Absicht sind: Zahlungssuche für die Nutzung oder Übertragung der Marke, Trittbrettfahren auf dem Ruf einer bekannten Marke und Blockierung des Markteintritts eines Wettbewerbers in Japan.",
+        "it": "Il n. 19 mira alle domande che cercano di sfruttare un marchio notorio, sia nazionale che straniero, per scopi sleali. Mentre si sovrappone al n. 7, il n. 19 ha un significato proprio in quanto richiede esplicitamente sia la notorietà che l'intento sleale. Esempi tipici di scopo sleale includono: chiedere pagamento per l'uso o il trasferimento del marchio, sfruttare la reputazione di un marchio notorio e bloccare l'ingresso di un concorrente nel mercato giapponese."
+      },
+      "practice": {
+        "ja": "海外ブランドが日本市場参入前に第三者に商標を先取りされた場合、7号に加えて19号も根拠として活用できる。19号は著名性の立証が要件となるため、ブランドの知名度を示す証拠（売上・広告実績・メディア掲載等）を事前に整備しておくことが重要。海外取引先には「bad faith registration targeting well-known marks」として説明するとわかりやすい。",
+        "en": "Where a foreign brand's mark has been pre-emptively registered in Japan by a third party, item (xix) can be invoked alongside item (vii). Because item (xix) requires proof of well-known status, it is important to compile evidence of the brand's reputation in advance, such as sales records, advertising history, and media coverage. Explaining this to overseas partners as targeting bad-faith registrations of well-known marks is effective.",
+        "de": "Wenn die Marke eines ausländischen Unternehmens von einem Dritten in Japan vorab registriert wurde, kann Nr. 19 neben Nr. 7 geltend gemacht werden. Da Nr. 19 den Nachweis der Bekanntheit erfordert, ist es wichtig, Beweise für den Ruf der Marke im Voraus zusammenzustellen.",
+        "it": "Quando il marchio di un'azienda straniera è stato pre-registrato in Giappone da un terzo, il n. 19 può essere invocato insieme al n. 7. Poiché il n. 19 richiede la prova della notorietà, è importante raccogliere in anticipo prove della reputazione del marchio."
+      }
+    },
+    "related_terms": [
+      "well-known mark",
+      "bad faith",
+      "unfair purpose",
+      "trademark hijacking",
+      "brand squatting",
+      "famous mark"
+    ],
+    "articles": [
+      "4-1-19"
+    ],
+    "tags": [
+      "relative grounds",
+      "article 4",
+      "bad faith",
+      "well-known mark",
+      "foreign brand",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0024",
+    "level": "basic",
+    "topic": {
+      "ja": "4条4項：コンセント制度",
+      "en": "Article 4(4): the consent system (coexistence agreement)",
+      "de": "Artikel 4 Abs. 4: das Konsensverfahren (Koexistenzvereinbarung)",
+      "it": "Articolo 4 comma 4: il sistema del consenso (accordo di coesistenza)"
+    },
+    "summary": {
+      "ja": "先行登録商標権者の承諾（コンセント）があり、かつ出所混同のおそれがない場合は、4条1項11号に該当する商標であっても登録が認められる。",
+      "en": "Where the earlier registered trademark owner has given consent and there is no likelihood of confusion as to commercial origin, a mark that would otherwise be refused under Article 4(1)(xi) may be registered.",
+      "de": "Wenn der ältere eingetragene Markeninhaber zugestimmt hat und keine Verwechslungsgefahr hinsichtlich der betrieblichen Herkunft besteht, kann eine Marke, die sonst nach Artikel 4 Abs. 1 Nr. 11 abgelehnt würde, eingetragen werden.",
+      "it": "Quando il titolare del marchio registrato anteriore ha dato il consenso e non vi è rischio di confusione sull'origine commerciale, un marchio che altrimenti sarebbe rifiutato ai sensi dell'articolo 4 comma 1 n. 11 può essere registrato."
+    },
+    "notes": {
+      "law": {
+        "ja": "4条4項は2024年4月1日施行の改正により新設されたコンセント制度。4条1項11号に該当する商標であっても、①引用商標権者の承諾（コンセント）があり、かつ②両商標の使用により出所の混同を生ずるおそれがない場合に限り、登録が認められる。承諾は査定時において存在することが必要。「出所混同のおそれがない」の判断では、審査基準上、(a)出願人と引用商標権者に支配関係がある場合、および(b)両商標が使用される商品・役務の出所が実質的に同一である場合は、混同のおそれがないものとして取り扱われる。なお、本条項は4条1項11号の例外であり、10号（未登録周知商標）には直接適用されない。",
+        "en": "Article 4(4) introduced the consent system by an amendment effective 1 April 2024. Even where a mark falls under Article 4(1)(xi), registration is permitted if: (1) the owner of the cited registered mark has given consent, and (2) there is no likelihood of confusion as to commercial origin from the concurrent use of both marks. The consent must exist at the time of the registration decision. Under the examination guidelines, two specific situations are treated as not giving rise to confusion: (a) where there is a control relationship between the applicant and the cited trademark owner, and (b) where the commercial source of the goods or services on which both marks are used is substantially the same. Note that this provision is an exception to item (xi) only and does not directly apply to item (x) (unregistered well-known marks).",
+        "de": "Artikel 4 Abs. 4 führte das Konsenssystem durch eine am 1. April 2024 in Kraft getretene Änderung ein. Selbst wenn eine Marke unter Artikel 4 Abs. 1 Nr. 11 fällt, ist die Eintragung zulässig, wenn: (1) der Inhaber der zitierten eingetragenen Marke zugestimmt hat und (2) durch die gleichzeitige Nutzung beider Marken keine Verwechslungsgefahr hinsichtlich der betrieblichen Herkunft besteht. Laut Prüfungsrichtlinien gelten zwei spezifische Situationen als nicht verwechslungsgefährlich: (a) ein Beherrschungsverhältnis zwischen Anmelder und zitiertem Markeninhaber und (b) im Wesentlichen gleiche kommerzielle Herkunft der Waren oder Dienstleistungen.",
+        "it": "L'articolo 4 comma 4 ha introdotto il sistema del consenso con una modifica entrata in vigore il 1° aprile 2024. Anche quando un marchio rientra nell'articolo 4 comma 1 n. 11, la registrazione è consentita se: (1) il titolare del marchio registrato citato ha dato il consenso e (2) non vi è rischio di confusione sull'origine commerciale dall'uso concorrente di entrambi i marchi. Secondo le linee guida dell'esame, due situazioni specifiche sono trattate come non generanti confusione: (a) un rapporto di controllo tra il richiedente e il titolare del marchio citato e (b) un'origine commerciale sostanzialmente identica dei prodotti o servizi."
+      },
+      "practice": {
+        "ja": "コンセント制度の実務上のポイントは以下のとおり。①承諾書は査定時に存在していなければならないため、審査中に取得することも可能。②「出所混同のおそれがない」の立証が別途必要であり、承諾書のみでは足りない。③支配関係（親子会社・グループ会社等）がある場合は、その関係を示す証拠（登記簿・組織図等）と共に混同のおそれがない旨を主張することで審査が通りやすくなる。④施行日（2024年4月1日）以前の出願には適用されず、旧来の支配関係取扱いが引き続き適用される（詳細はtm-basic-0025参照）。",
+        "en": "Key practical points of the consent system: (1) The consent letter must exist at the time of the registration decision, so it can be obtained during examination. (2) The absence of confusion as to source must also be demonstrated separately; a consent letter alone is insufficient. (3) Where a control relationship exists (parent-subsidiary, group company, etc.), submitting evidence of that relationship (company registry extracts, organizational charts, etc.) together with an argument that confusion is unlikely tends to facilitate examination. (4) The provision does not apply to applications filed before the effective date of 1 April 2024; for such applications the legacy control-relationship practice continues to apply (see tm-basic-0025).",
+        "de": "Wichtige praktische Punkte des Konsenssystems: (1) Das Zustimmungsschreiben muss zum Zeitpunkt der Eintragungsentscheidung vorliegen, kann also während der Prüfung eingeholt werden. (2) Das Fehlen von Verwechslungsgefahr muss separat nachgewiesen werden; ein Zustimmungsschreiben allein reicht nicht aus. (3) Besteht ein Beherrschungsverhältnis, erleichtert die Vorlage entsprechender Nachweise die Prüfung. (4) Die Vorschrift gilt nicht für Anmeldungen vor dem 1. April 2024.",
+        "it": "Punti pratici chiave del sistema del consenso: (1) La lettera di consenso deve esistere al momento della decisione di registrazione. (2) L'assenza di confusione sull'origine deve essere dimostrata separatamente. (3) Dove esiste un rapporto di controllo, presentare prove di tale rapporto facilita l'esame. (4) La disposizione non si applica alle domande depositate prima del 1° aprile 2024."
+      }
+    },
+    "related_terms": [
+      "consent",
+      "coexistence",
+      "control relationship",
+      "confusion",
+      "Article 4(4)",
+      "2024 amendment"
+    ],
+    "articles": [
+      "4-4"
+    ],
+    "tags": [
+      "consent",
+      "coexistence",
+      "article 4",
+      "2024 amendment",
+      "control relationship",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0025",
+    "level": "basic",
+    "topic": {
+      "ja": "支配関係取扱いの経緯とコンセント制度への移行",
+      "en": "Historical control-relationship practice and transition to the consent system",
+      "de": "Historische Beherrschungsverhältnis-Praxis und Übergang zum Konsenssystem",
+      "it": "Pratica storica del rapporto di controllo e transizione al sistema del consenso"
+    },
+    "summary": {
+      "ja": "改訂第13〜16版の審査基準において設けられていた支配関係取扱いは、コンセント制度（4条4項）の導入に伴い審査基準から削除されたが、施行日前の出願および4条1項10号該当出願については従来どおり適用される。",
+      "en": "The control-relationship practice established in examination guideline revisions 13–16 was removed following the introduction of the consent system under Article 4(4), but continues to apply to applications filed before the effective date and to applications falling under Article 4(1)(x).",
+      "de": "Die in den Prüfungsrichtlinienrevisionen 13–16 etablierte Beherrschungsverhältnis-Praxis wurde nach Einführung des Konsenssystems gemäß Artikel 4 Abs. 4 aus den Richtlinien gestrichen, gilt aber weiterhin für vor dem Stichtag eingereichte Anmeldungen und Anmeldungen nach Artikel 4 Abs. 1 Nr. 10.",
+      "it": "La pratica del rapporto di controllo stabilita nelle revisioni 13–16 delle linee guida dell'esame è stata rimossa a seguito dell'introduzione del sistema del consenso ai sensi dell'articolo 4 comma 4, ma continua ad applicarsi alle domande depositate prima della data di entrata in vigore e alle domande rientranti nell'articolo 4 comma 1 n. 10."
+    },
+    "notes": {
+      "law": {
+        "ja": "旧来の支配関係取扱い（審査基準改訂第13〜16版）では、出願人と引用商標権者が①引用商標権者が出願人の支配下にある、②出願人が引用商標権者の支配下にある、のいずれかの関係にある場合、かつ引用商標権者が登録を了承する旨の証拠を提出した場合に、4条1項10号・11号に該当しないものとして取り扱われていた。改訂第17版（コンセント制度導入後）では、この審査基準は削除された。ただし経過措置として、(a)コンセント制度施行日（2024年4月1日）前にされた出願、および(b)4条1項10号に該当する出願（コンセント制度が4条1項11号のみの例外であるため）については、引き続き旧取扱いの適用を受けることが可能。4条4項のコンセント制度では、支配関係がある場合を「出所混同のおそれがない」ケースの一類型として整理している点でも、旧取扱いとの連続性がある。",
+        "en": "Under the legacy control-relationship practice (examination guideline revisions 13–16), where the applicant and the cited trademark owner stood in one of two relationships—(1) the cited owner being under the applicant's control, or (2) the applicant being under the cited owner's control—and the cited owner submitted evidence of consent to registration, the application was treated as not falling under Articles 4(1)(x) or (xi). This guideline was removed in revision 17 following the introduction of the consent system. However, as a transitional measure, the legacy practice continues to be available for: (a) applications filed before 1 April 2024, and (b) applications subject to Article 4(1)(x), since the consent system under Article 4(4) operates only as an exception to item (xi). The Article 4(4) consent system maintains continuity with the legacy practice by treating the existence of a control relationship as one type of situation where confusion as to source is deemed absent.",
+        "de": "Im Rahmen der früheren Beherrschungsverhältnis-Praxis wurden Anmeldungen nicht als unter Nr. 10 oder 11 fallend behandelt, wenn Anmelder und zitierter Inhaber in einem Beherrschungsverhältnis standen und der zitierte Inhaber Beweise für seine Zustimmung vorlegte. Diese Richtlinie wurde in Revision 17 gestrichen. Als Übergangsmaßnahme bleibt die frühere Praxis verfügbar für Anmeldungen vor dem 1. April 2024 und Anmeldungen nach Nr. 10.",
+        "it": "Nell'ambito della precedente pratica del rapporto di controllo, le domande non erano considerate rientranti nei nn. 10 o 11 se il richiedente e il titolare citato erano in un rapporto di controllo e il titolare citato presentava prove del consenso. Questa linea guida è stata rimossa nella revisione 17. Come misura transitoria, la pratica precedente rimane disponibile per le domande depositate prima del 1° aprile 2024 e per le domande soggette al n. 10."
+      },
+      "practice": {
+        "ja": "実務上の判断フローは以下のとおり。①出願日が2024年4月1日以降か否かを確認。②施行日以降の出願で11号該当の場合→4条4項のコンセント制度を検討。③施行日前の出願、または10号該当の場合→旧支配関係取扱いが引き続き適用可能。④旧取扱い適用時は、(a)支配関係の証拠（登記・組織図等）と(b)引用商標権者の了承証拠の両方が必要。海外グループ企業の日本商標管理では、親子会社・兄弟会社間での商標出願が絡むケースが多く、この経緯を正確に理解しておくことが重要。",
+        "en": "The practical decision flow is as follows: (1) Confirm whether the filing date is on or after 1 April 2024. (2) For post-effective-date applications subject to item (xi), consider the Article 4(4) consent system. (3) For pre-effective-date applications, or applications subject to item (x), the legacy control-relationship practice remains available. (4) When relying on the legacy practice, both (a) evidence of the control relationship (company registry, organizational chart, etc.) and (b) evidence of the cited owner's consent to registration are required. In managing Japanese trademarks within international corporate groups, applications involving parent-subsidiary or sister-company relationships are common, making accurate understanding of this history important.",
+        "de": "Der praktische Entscheidungsablauf: (1) Prüfen, ob das Anmeldedatum am oder nach dem 1. April 2024 liegt. (2) Bei nach dem Stichtag eingereichten Anmeldungen nach Nr. 11 das Konsenssystem erwägen. (3) Bei vor dem Stichtag eingereichten Anmeldungen oder nach Nr. 10 bleibt die frühere Praxis anwendbar. (4) Bei Rückgriff auf die frühere Praxis sind sowohl Beherrschungsnachweise als auch Zustimmungsnachweise erforderlich.",
+        "it": "Il flusso decisionale pratico: (1) Confermare se la data di deposito è il 1° aprile 2024 o successiva. (2) Per le domande post-data effettiva soggette al n. 11, considerare il sistema del consenso. (3) Per le domande pre-data effettiva o soggette al n. 10, la pratica precedente rimane disponibile. (4) Quando si fa affidamento sulla pratica precedente, sono necessarie sia prove del rapporto di controllo che prove del consenso del titolare citato."
+      }
+    },
+    "related_terms": [
+      "control relationship",
+      "consent system",
+      "transitional measure",
+      "Article 4(1)(x)",
+      "Article 4(1)(xi)",
+      "examination guidelines revision 17"
+    ],
+    "articles": [
+      "4-4",
+      "4-1-10",
+      "4-1-11"
+    ],
+    "tags": [
+      "consent",
+      "control relationship",
+      "transitional",
+      "article 4",
+      "2024 amendment",
+      "exam"
+    ]
   }
 ]
