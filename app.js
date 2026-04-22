@@ -2,11 +2,11 @@ const STATE = {
   topics: [],
   filteredTopics: [],
   currentTopicId: null,
-  lang: localStorage.getItem('tmn_lang') || 'ja',
+  lang: localStorage.getItem('tmn_lang') || 'en',
   bookmarksOnly: localStorage.getItem('tmn_bookmarks_only') === '1',
   bookmarks: new Set(JSON.parse(localStorage.getItem('tmn_bookmarks') || '[]')),
   query: '',
-  notesTab: 'law'
+  notesTab: 'law' // 'law' | 'practice'
 };
 
 const el = {
@@ -23,23 +23,6 @@ const el = {
 };
 
 const UI_TEXT = {
-  ja: {
-    noTopics: '該当するトピックがありません。',
-    selectTopic: 'トピックを選択してください。',
-    failedLoad: 'topics.json の読み込みに失敗しました。',
-    legalNote: '法的説明',
-    practiceNote: '実務・商談メモ',
-    keyTerms: '関連用語',
-    relevantArticles: '関連条文',
-    tags: 'タグ',
-    none: 'なし',
-    notListed: '記載なし',
-    addBookmark: 'ブックマークに追加',
-    removeBookmark: 'ブックマーク解除',
-    bookmarkOnly: 'ブックマークのみ',
-    showingBookmarks: 'ブックマーク表示中',
-    footer: 'このアプリは商談・実務のための参考用ツールであり、法的助言を提供するものではありません。'
-  },
   en: {
     noTopics: 'No topics found.',
     selectTopic: 'Select a topic.',
@@ -55,6 +38,7 @@ const UI_TEXT = {
     removeBookmark: 'Remove bookmark',
     bookmarkOnly: 'Bookmarks only',
     showingBookmarks: 'Showing bookmarks',
+    topics: 'Topics',
     footer: 'This app is a practical reference tool for business discussions and does not constitute legal advice.'
   },
   de: {
@@ -72,6 +56,7 @@ const UI_TEXT = {
     removeBookmark: 'Lesezeichen entfernen',
     bookmarkOnly: 'Nur Lesezeichen',
     showingBookmarks: 'Lesezeichen werden angezeigt',
+    topics: 'Themen',
     footer: 'Diese App ist ein praktisches Nachschlagewerk für Geschäftsgespräche und stellt keine Rechtsberatung dar.'
   },
   it: {
@@ -89,12 +74,13 @@ const UI_TEXT = {
     removeBookmark: 'Rimuovi dai preferiti',
     bookmarkOnly: 'Solo preferiti',
     showingBookmarks: 'Visualizzazione preferiti',
+    topics: 'Argomenti',
     footer: 'Questa app è uno strumento pratico di riferimento per discussioni commerciali e non costituisce consulenza legale.'
   }
 };
 
 function t(key) {
-  return UI_TEXT[STATE.lang]?.[key] || UI_TEXT.ja[key] || UI_TEXT.en[key] || key;
+  return UI_TEXT[STATE.lang]?.[key] || UI_TEXT.en[key] || key;
 }
 
 function escapeHtml(str = '') {
@@ -114,9 +100,10 @@ function highlight(text = '', query = '') {
   return safe.replace(new RegExp(`(${escaped})`, 'ig'), '<mark>$1</mark>');
 }
 
+// Resolve a multilingual field: prefer STATE.lang, fall back to 'en', then first available.
 function resolve(obj) {
   if (!obj || typeof obj !== 'object') return '';
-  return obj[STATE.lang] || obj.ja || obj.en || Object.values(obj).find(Boolean) || '';
+  return obj[STATE.lang] || obj.en || Object.values(obj).find(Boolean) || '';
 }
 
 function savePrefs() {
@@ -304,12 +291,9 @@ function syncFromHash() {
   STATE.currentTopicId = STATE.filteredTopics[0]?.id || STATE.topics[0]?.id || null;
 }
 
-function isMobileLayout() {
-  return window.matchMedia('(max-width: 860px)').matches;
-}
+// ── Sidebar (mobile) ──
 
 function openSidebar() {
-  if (!isMobileLayout()) return;
   el.sidebar.classList.add('open');
   el.sidebarOverlay.classList.add('active');
   el.sidebarOverlay.setAttribute('aria-hidden', 'false');
@@ -324,6 +308,8 @@ function closeSidebar() {
   el.menuBtn.setAttribute('aria-expanded', 'false');
   document.body.style.overflow = '';
 }
+
+// ── Init ──
 
 async function init() {
   el.languageSelect.value = STATE.lang;
@@ -350,7 +336,6 @@ async function init() {
   });
 
   el.menuBtn.addEventListener('click', () => {
-    if (!isMobileLayout()) return;
     const isOpen = el.sidebar.classList.contains('open');
     isOpen ? closeSidebar() : openSidebar();
   });
@@ -358,17 +343,12 @@ async function init() {
   el.sidebarCloseBtn.addEventListener('click', closeSidebar);
   el.sidebarOverlay.addEventListener('click', closeSidebar);
 
-  window.addEventListener('resize', () => {
-    if (!isMobileLayout()) {
-      closeSidebar();
-    }
-  });
-
   window.addEventListener('hashchange', () => {
     syncFromHash();
     render();
   });
 
+  // Cache busting: version string derived from current date at build/load time
   const cacheBust = `v=${new Date().toISOString().slice(0, 10)}`;
   const res = await fetch(`./topics.json?${cacheBust}`, { cache: 'no-store' });
   const data = await res.json();
