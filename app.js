@@ -2,7 +2,7 @@ const STATE = {
   topics: [],
   filteredTopics: [],
   currentTopicId: null,
-  lang: localStorage.getItem('tmn_lang') || 'en',
+  lang: localStorage.getItem('tmn_lang') || 'ja',
   bookmarksOnly: localStorage.getItem('tmn_bookmarks_only') === '1',
   bookmarks: new Set(JSON.parse(localStorage.getItem('tmn_bookmarks') || '[]')),
   query: '',
@@ -23,6 +23,24 @@ const el = {
 };
 
 const UI_TEXT = {
+  ja: {
+    noTopics: '該当するトピックがありません。',
+    selectTopic: 'トピックを選択してください。',
+    failedLoad: 'topics.json の読み込みに失敗しました。',
+    legalNote: '法律ノート',
+    practiceNote: '実務ノート',
+    keyTerms: 'キーワード',
+    relevantArticles: '関連条文',
+    tags: 'タグ',
+    none: 'なし',
+    notListed: '記載なし',
+    addBookmark: 'ブックマークに追加',
+    removeBookmark: 'ブックマーク解除',
+    bookmarkOnly: 'ブックマークのみ',
+    showingBookmarks: 'ブックマーク表示中',
+    topics: 'トピック',
+    footer: 'このアプリは商談時の実務参考ツールであり、法的助言を構成するものではありません。'
+  },
   en: {
     noTopics: 'No topics found.',
     selectTopic: 'Select a topic.',
