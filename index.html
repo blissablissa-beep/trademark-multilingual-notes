@@ -1,78 +1,1007 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trademark Multilingual Notes</title>
-  <meta name="description" content="Practical multilingual notes on Japanese trademark law for business discussions.">
-  <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="header-top">
-        <div class="header-title">
-          <h1>Trademark Multilingual Notes</h1>
-          <p class="subtitle">Practical multilingual notes on Japanese trademark law for business discussions.</p>
-        </div>
-        <button id="menuBtn" class="menu-btn" type="button" aria-label="Open topic list" aria-expanded="false">
-          <span class="hamburger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </button>
-      </div>
-
-      <div class="header-controls">
-        <label class="control">
-          <span>Language</span>
-          <select id="languageSelect">
-            <option value="ja">日本語</option>
-            <option value="en">English</option>
-            <option value="de">Deutsch</option>
-            <option value="it">Italiano</option>
-          </select>
-        </label>
-
-        <label class="control search-control">
-          <span>Search</span>
-          <input id="searchInput" type="search" placeholder="Search topics, terms, tags">
-        </label>
-
-        <button id="bookmarkFilterBtn" class="secondary-btn" type="button" aria-pressed="false">
-          Bookmarks only
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <div id="sidebarOverlay" class="sidebar-overlay" aria-hidden="true"></div>
-
-  <main class="layout">
-    <aside id="sidebar" class="sidebar" aria-label="Topic list">
-      <div class="sidebar-header">
-        <span class="sidebar-title">Topics</span>
-        <button id="sidebarCloseBtn" class="sidebar-close-btn" type="button" aria-label="Close topic list">✕</button>
-      </div>
-      <div id="topicList" class="topic-list"></div>
-    </aside>
-
-    <section class="content">
-      <article id="detailCard" class="detail-card">
-        <p class="empty">Loading...</p>
-      </article>
-    </section>
-  </main>
-
-  <template id="topicItemTemplate">
-    <button class="topic-item" type="button">
-      <span class="topic-item-title"></span>
-      <span class="topic-item-meta"></span>
-    </button>
-  </template>
-
-  <script src="./app.js"></script>
-</body>
-</html>
+[
+  {
+    "id": "tm-basic-0001",
+    "level": "basic",
+    "topic": {
+      "ja": "日本の商標法の目的",
+      "en": "Purpose of Japanese Trademark Law",
+      "de": "Zweck des japanischen Markenrechts",
+      "it": "Finalità del diritto dei marchi giapponese"
+    },
+    "summary": {
+      "ja": "商標法は、商標の保護を通じて業務上の信用を維持し、需要者の利益を保護することを目的とする。",
+      "en": "Japanese trademark law protects trademarks, business goodwill, and consumer interests.",
+      "de": "Das japanische Markenrecht schützt Marken, den geschäftlichen Goodwill und die Interessen der Verbraucher.",
+      "it": "Il diritto giapponese dei marchi protegge i marchi, l'avviamento commerciale e gli interessi dei consumatori."
+    },
+    "notes": {
+      "law": {
+        "ja": "法の目的は単なる記号の保護ではない。商標が果たす出所表示機能を守ることで、公正な競争と需要者保護が実現される。",
+        "en": "The law does not merely protect a sign as such. It also supports fair competition by protecting the source-indicating function of trademarks.",
+        "de": "Das Gesetz schützt nicht nur ein Zeichen als solches. Es fördert auch den lauteren Wettbewerb, indem es die herkunftshinweisende Funktion der Marke schützt.",
+        "it": "La legge non si limita a proteggere un segno in quanto tale. Sostiene anche la concorrenza leale tutelando la funzione distintiva di origine del marchio."
+      },
+      "practice": {
+        "ja": "海外の取引先に説明する際は、「ブランド名の保護」ではなく「出所表示機能の保護」という切り口で伝えると理解を得やすい。",
+        "en": "When explaining this to overseas partners, framing the system as protecting the source-indicating function of brands tends to land better than saying it simply protects brand names.",
+        "de": "Gegenüber ausländischen Partnern ist es wirkungsvoller, das System als Schutz der Herkunftsfunktion von Marken darzustellen.",
+        "it": "Quando si spiega questo a partner stranieri, inquadrare il sistema come protezione della funzione distintiva di origine tende a essere più efficace."
+      }
+    },
+    "related_terms": [
+      "trademark",
+      "goodwill",
+      "consumer protection"
+    ],
+    "articles": [
+      "1"
+    ],
+    "tags": [
+      "purpose",
+      "foundation",
+      "policy"
+    ]
+  },
+  {
+    "id": "tm-basic-0002",
+    "level": "basic",
+    "topic": {
+      "ja": "商標の定義",
+      "en": "What counts as a trademark",
+      "de": "Was als Marke gelten kann",
+      "it": "Che cosa può costituire un marchio"
+    },
+    "summary": {
+      "ja": "商標とは、事業者が自己の商品・役務を他者のものと識別するために使用する標識である。",
+      "en": "A trademark is a sign used in business to distinguish one's goods or services from those of others.",
+      "de": "Eine Marke ist ein im geschäftlichen Verkehr verwendetes Zeichen, das Waren oder Dienstleistungen eines Unternehmens von denen anderer unterscheidet.",
+      "it": "Un marchio è un segno usato nell'attività commerciale per distinguere i propri prodotti o servizi da quelli altrui."
+    },
+    "notes": {
+      "law": {
+        "ja": "文字・図形・記号・立体的形状・色彩・音など多様な態様が対象となる。ただし、商標として保護されるには出所識別機能を有することが必要。",
+        "en": "Words, logos, symbols, shapes, colors, sounds, and combinations may function as trademarks if they can distinguish origin under the statute.",
+        "de": "Wörter, Logos, Symbole, Formen, Farben, Klänge und Kombinationen können als Marken dienen, wenn sie Herkunft unterscheiden können.",
+        "it": "Parole, loghi, simboli, forme, colori, suoni e loro combinazioni possono funzionare come marchi se possono distinguere l'origine."
+      },
+      "practice": {
+        "ja": "ロゴや色、音も保護対象となりうる点は海外取引先に意外と知られていない。商談では積極的に伝えると理解が深まる。",
+        "en": "Emphasizing that logos, colors, and sounds can also be protected often surprises overseas partners and helps them see the breadth of what can be registered in Japan.",
+        "de": "Der Hinweis, dass auch Logos, Farben und Klänge schutzfähig sein können, überrascht ausländische Partner häufig.",
+        "it": "Sottolineare che anche loghi, colori e suoni possono essere protetti sorprende spesso i partner stranieri."
+      }
+    },
+    "related_terms": [
+      "sign",
+      "goods",
+      "services",
+      "distinctiveness"
+    ],
+    "articles": [
+      "2"
+    ],
+    "tags": [
+      "definition",
+      "signs",
+      "scope"
+    ]
+  },
+  {
+    "id": "tm-basic-0003",
+    "level": "basic",
+    "topic": {
+      "ja": "登録主義と使用",
+      "en": "Registration principle and use",
+      "de": "Registrierungsprinzip und Benutzung",
+      "it": "Principio della registrazione e uso"
+    },
+    "summary": {
+      "ja": "日本は原則として登録により商標権が発生する登録主義を採るが、使用も実務上重要な意味を持つ。",
+      "en": "Japan basically protects trademarks through registration, although use still matters in practice.",
+      "de": "Japan schützt Marken grundsätzlich durch Registrierung, auch wenn die Benutzung in der Praxis weiterhin wichtig ist.",
+      "it": "Il Giappone protegge in linea di principio i marchi mediante registrazione, anche se l'uso resta importante nella pratica."
+    },
+    "notes": {
+      "law": {
+        "ja": "完全な法的権利を得るには原則として登録が必要。一方、実際の使用は第50条の不使用取消審判において重要な意味を持つ。",
+        "en": "To obtain the full statutory right, the applicant generally needs registration. Yet actual use can matter for non-use cancellation proceedings under Article 50.",
+        "de": "Für das volle gesetzliche Recht braucht der Anmelder im Regelfall eine Eintragung. Die tatsächliche Benutzung ist jedoch für Verfallsverfahren nach Artikel 50 relevant.",
+        "it": "Per ottenere il pieno diritto, il richiedente ha in genere bisogno della registrazione. Tuttavia l'uso effettivo rileva per i procedimenti di decadenza ai sensi dell'articolo 50."
+      },
+      "practice": {
+        "ja": "長年の使用だけで強い権利が生じると誤解している海外取引先は多い。早期登録を勧め、不使用取消対策として使用の記録・証拠を残すよう助言すること。",
+        "en": "A common mistake is assuming that long-term use in Japan automatically confers strong rights. Advise partners to register early and to document actual use as a safeguard against cancellation actions.",
+        "de": "Ein häufiger Irrtum ist die Annahme, dass eine langjährige Benutzung automatisch starke Rechte verleiht. Frühzeitig eintragen und Benutzung dokumentieren.",
+        "it": "Un errore comune è ritenere che un uso prolungato conferisca automaticamente diritti solidi. Registrare tempestivamente e documentare l'uso effettivo."
+      }
+    },
+    "related_terms": [
+      "registration",
+      "use",
+      "non-use cancellation"
+    ],
+    "articles": [
+      "18",
+      "50"
+    ],
+    "tags": [
+      "registration",
+      "use",
+      "system"
+    ]
+  },
+  {
+    "id": "tm-basic-0004",
+    "level": "basic",
+    "topic": {
+      "ja": "識別力",
+      "en": "Distinctiveness",
+      "de": "Unterscheidungskraft",
+      "it": "Capacità distintiva"
+    },
+    "summary": {
+      "ja": "商標として登録されるには、自他の商品・役務を識別できる力（識別力）が必要である。",
+      "en": "A sign must be capable of distinguishing the applicant's goods or services from those of others.",
+      "de": "Ein Zeichen muss geeignet sein, die Waren oder Dienstleistungen des Anmelders von denen anderer zu unterscheiden.",
+      "it": "Un segno deve essere idoneo a distinguere i prodotti o servizi del richiedente da quelli altrui."
+    },
+    "notes": {
+      "law": {
+        "ja": "一般名称や記述的表示は、需要者が単一の出所を示すものと認識しないため、原則として識別力を欠き登録できない。",
+        "en": "Marks that are too generic, descriptive, or customary often fail because consumers would not perceive them as indicating a single commercial source.",
+        "de": "Zu allgemeine oder beschreibende Zeichen scheitern häufig, weil Verbraucher sie nicht als Hinweis auf eine einzige Herkunft wahrnehmen.",
+        "it": "I segni troppo generici o descrittivi spesso non sono registrabili, perché i consumatori non li percepirebbero come indicazione di una sola origine."
+      },
+      "practice": {
+        "ja": "ブランド名の選定段階で、純粋に商品を説明する名称は避けるよう助言する。造語や独自性の高い名称の方が登録しやすく、権利範囲も広くなりやすい。",
+        "en": "When advising on brand naming, steer clients away from purely descriptive names. Coined or fanciful marks are far safer and easier to register.",
+        "de": "Bei der Markenberatung sollte man Mandanten von rein beschreibenden Namen abraten. Phantasiemarken sind weitaus sicherer.",
+        "it": "Quando si consiglia sulla scelta del marchio, orientare i clienti lontano da nomi puramente descrittivi. I marchi di fantasia sono molto più sicuri."
+      }
+    },
+    "related_terms": [
+      "descriptive mark",
+      "generic term",
+      "source indicator"
+    ],
+    "articles": [
+      "3"
+    ],
+    "tags": [
+      "distinctiveness",
+      "requirements",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0005",
+    "level": "basic",
+    "topic": {
+      "ja": "不登録事由",
+      "en": "Main grounds for refusal",
+      "de": "Wichtige absolute und relative Schutzhindernisse",
+      "it": "Principali motivi di rifiuto"
+    },
+    "summary": {
+      "ja": "識別力の欠如、公益上の理由、先行権との抵触などにより出願が拒絶されることがある。",
+      "en": "Applications may be refused for lack of distinctiveness, conflict with public interest, or conflict with earlier rights.",
+      "de": "Anmeldungen können wegen fehlender Unterscheidungskraft oder Kollision mit älteren Rechten zurückgewiesen werden.",
+      "it": "Le domande possono essere rifiutate per mancanza di capacità distintiva o per conflitto con diritti anteriori."
+    },
+    "notes": {
+      "law": {
+        "ja": "第3条（絶対的不登録事由：識別力の欠如）と第4条（相対的不登録事由：先行権との抵触）を区別して理解することが重要。",
+        "en": "It is useful to separate absolute grounds (Article 3: no distinctiveness) from relative grounds (Article 4: conflict with earlier rights).",
+        "de": "Es ist sinnvoll, absolute Schutzhindernisse (Artikel 3) von relativen Schutzhindernissen (Artikel 4) zu trennen.",
+        "it": "È utile distinguere i motivi assoluti (articolo 3) dai motivi relativi (articolo 4)."
+      },
+      "practice": {
+        "ja": "出願前の調査では第3条リスク（識別力）と第4条リスク（先行商標との抵触）の両方をカバーする必要がある。この事前調査の省略が最もよくある実務上のミスの一つ。",
+        "en": "Before filing, a clearance search covering both Article 3 and Article 4 risks is essential. Skipping this step is one of the most common and costly mistakes in trademark practice.",
+        "de": "Vor der Anmeldung ist eine Kollisionsrecherche, die sowohl Risiken nach Artikel 3 als auch nach Artikel 4 abdeckt, unerlässlich.",
+        "it": "Prima del deposito, è essenziale una ricerca preliminare che copra sia i rischi dell'articolo 3 sia quelli dell'articolo 4."
+      }
+    },
+    "related_terms": [
+      "absolute grounds",
+      "relative grounds",
+      "public policy",
+      "earlier mark"
+    ],
+    "articles": [
+      "3",
+      "4"
+    ],
+    "tags": [
+      "refusal",
+      "articles 3 and 4",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0006",
+    "level": "basic",
+    "topic": {
+      "ja": "先願主義",
+      "en": "First-to-file principle",
+      "de": "Prioritätsprinzip nach dem Anmeldetag",
+      "it": "Principio del first-to-file"
+    },
+    "summary": {
+      "ja": "同一・類似の商標について複数の出願が競合した場合、原則として先に出願した者が優先される。",
+      "en": "As a basic rule, priority goes to the earlier applicant rather than the later filer.",
+      "de": "Grundsätzlich hat der frühere Anmelder Vorrang vor dem späteren Anmelder.",
+      "it": "Come regola di base, la priorità spetta al richiedente anteriore rispetto a quello successivo."
+    },
+    "notes": {
+      "law": {
+        "ja": "同日出願の場合は特許庁が協議を命じ、協議不成立の場合はいずれも登録を受けられない（第8条）。",
+        "en": "Where two parties file on the same day, the JPO may invite them to negotiate; if no agreement is reached, neither may obtain registration.",
+        "de": "Wenn zwei Parteien am selben Tag anmelden, kann das JPO sie zur Einigung auffordern; wird keine Einigung erzielt, kann keine Partei die Eintragung erlangen.",
+        "it": "Quando due parti depositano lo stesso giorno, lo JPO può invitarle a trattare; se non si raggiunge un accordo, nessuna delle due può ottenere la registrazione."
+      },
+      "practice": {
+        "ja": "ブランド名が決まった段階で、市場投入前であっても直ちに出願するよう助言する。市場投入後まで待つと、第三者による先行出願のリスクがある。",
+        "en": "Advise clients to file as soon as a brand name is decided, even before launch. Waiting until after market entry can mean losing the right to a third-party filer.",
+        "de": "Mandanten sollte geraten werden, die Anmeldung einzureichen, sobald ein Markenname feststeht, auch vor dem Markteintritt.",
+        "it": "Si consiglia ai clienti di depositare non appena viene deciso un nome di marca, anche prima del lancio."
+      }
+    },
+    "related_terms": [
+      "priority",
+      "filing date",
+      "clearance search"
+    ],
+    "articles": [
+      "8"
+    ],
+    "tags": [
+      "priority",
+      "filing",
+      "strategy"
+    ]
+  },
+  {
+    "id": "tm-basic-0007",
+    "level": "basic",
+    "topic": {
+      "ja": "出願から登録まで",
+      "en": "From application to registration",
+      "de": "Vom Antrag bis zur Eintragung",
+      "it": "Dalla domanda alla registrazione"
+    },
+    "summary": {
+      "ja": "出願・審査・拒絶理由通知（場合による）・登録査定・登録料納付・登録という流れが基本となる。",
+      "en": "The basic flow is filing, examination, possible office action, registration decision, fee payment, and registration.",
+      "de": "Der Grundablauf ist Anmeldung, Prüfung, möglicher Beanstandungsbescheid, Eintragungsentscheidung, Gebührenzahlung und Eintragung.",
+      "it": "Il percorso di base è domanda, esame, eventuale rilievo dell'ufficio, decisione di registrazione, pagamento delle tasse e registrazione."
+    },
+    "notes": {
+      "law": {
+        "ja": "拒絶理由通知が発せられた場合でも、意見書・補正書の提出により登録に至ることがある。特許庁は応答内容を審査したうえで最終判断を行う。",
+        "en": "A refusal is not always final. Applicants may respond to office actions and submit arguments or amendments. The JPO examines responses before issuing a final decision.",
+        "de": "Eine Zurückweisung ist nicht immer endgültig. Anmelder können auf Beanstandungsbescheide reagieren und Argumente oder Anpassungen einreichen.",
+        "it": "Un rifiuto non è sempre definitivo. I richiedenti possono rispondere ai rilievi dell'ufficio e presentare argomenti o modifiche."
+      },
+      "practice": {
+        "ja": "通常の審査では出願から登録まで約12か月かかる。拒絶理由通知が出た場合はさらに時間を要する。クライアントには余裕を持ったスケジュールを共有しておくこと。",
+        "en": "In Japan the process typically takes around twelve months from filing to registration under normal circumstances, and longer if office actions arise.",
+        "de": "In Japan dauert das Verfahren unter normalen Umständen etwa zwölf Monate von der Anmeldung bis zur Eintragung, bei Beanstandungen länger.",
+        "it": "In Giappone il processo richiede in genere circa dodici mesi dal deposito alla registrazione, e più a lungo se emergono rilievi."
+      }
+    },
+    "related_terms": [
+      "application",
+      "examination",
+      "office action",
+      "registration fee"
+    ],
+    "articles": [
+      "5",
+      "14",
+      "16",
+      "18"
+    ],
+    "tags": [
+      "procedure",
+      "filing",
+      "registration"
+    ]
+  },
+  {
+    "id": "tm-basic-0008",
+    "level": "basic",
+    "topic": {
+      "ja": "存続期間と更新",
+      "en": "Term and renewal",
+      "de": "Schutzdauer und Verlängerung",
+      "it": "Durata e rinnovo"
+    },
+    "summary": {
+      "ja": "商標権の存続期間は10年で、法的要件を満たす限り繰り返し更新が可能である。",
+      "en": "A trademark right lasts for a fixed term and may be renewed repeatedly if the legal conditions are met.",
+      "de": "Das Markenrecht besteht für eine feste Schutzdauer und kann bei Vorliegen der gesetzlichen Voraussetzungen wiederholt verlängert werden.",
+      "it": "Il diritto di marchio dura per un periodo determinato e può essere rinnovato più volte se ricorrono le condizioni di legge."
+    },
+    "notes": {
+      "law": {
+        "ja": "更新により理論上永続的に保護を維持できる点が、存続期間に上限がある特許権や著作権との大きな違いである。更新期間は10年（第19条・第20条）。",
+        "en": "Trademark protection can continue indefinitely through renewals, unlike patent or copyright which expire after a fixed maximum term. Each renewal term is ten years under Japanese law.",
+        "de": "Markenschutz kann durch Verlängerungen unbegrenzt fortgesetzt werden, anders als Patent- oder Urheberrechtsschutz. Jede Verlängerungsperiode beträgt zehn Jahre.",
+        "it": "La protezione del marchio può continuare indefinitamente mediante rinnovi, a differenza di brevetti o diritti d'autore. Ogni periodo di rinnovo è di dieci anni."
+      },
+      "practice": {
+        "ja": "更新期限の失念は権利消滅という重大なリスクを招く。一定規模以上のポートフォリオには、期限前に十分な余裕を持ってアラートを設定した一元管理システムが不可欠。",
+        "en": "Missed renewal deadlines are a frequent and avoidable cause of loss of rights. A centralized docketing system with alerts well in advance of each deadline is essential for any portfolio of meaningful size.",
+        "de": "Versäumte Verlängerungsfristen sind eine häufige Ursache für den Rechtsverlust. Ein zentrales Fristenverwaltungssystem mit rechtzeitigen Erinnerungen ist unerlässlich.",
+        "it": "Le scadenze di rinnovo mancate sono una causa frequente di perdita di diritti. Un sistema centralizzato di gestione delle scadenze è essenziale."
+      }
+    },
+    "related_terms": [
+      "renewal",
+      "term",
+      "maintenance"
+    ],
+    "articles": [
+      "19",
+      "20"
+    ],
+    "tags": [
+      "renewal",
+      "duration",
+      "maintenance"
+    ]
+  },
+  {
+    "id": "tm-basic-0009",
+    "level": "basic",
+    "topic": {
+      "ja": "権利範囲と侵害の基本",
+      "en": "Scope of the right and infringement basics",
+      "de": "Schutzumfang und Grundlagen der Verletzung",
+      "it": "Portata del diritto e basi della contraffazione"
+    },
+    "summary": {
+      "ja": "権利者は、法的範囲内で同一・類似の商標を同一・類似の商品・役務に無断使用する行為を差し止めることができる。",
+      "en": "The owner may stop unauthorized use of identical or similar marks for identical or similar goods or services within the legal scope.",
+      "de": "Der Inhaber kann die unbefugte Benutzung identischer oder ähnlicher Marken für identische oder ähnliche Waren oder Dienstleistungen untersagen.",
+      "it": "Il titolare può impedire l'uso non autorizzato di marchi identici o simili per prodotti o servizi identici o simili."
+    },
+    "notes": {
+      "law": {
+        "ja": "侵害判断では、①使用されている標識、②対象商品・役務、③両者の類似性、を総合的に検討する。第25条・第36条・第37条が根拠条文となる。",
+        "en": "Infringement analysis asks: what sign is used, for which goods or services, and how similar are the two sides? Articles 25, 36, and 37 set out the owner's rights and remedies.",
+        "de": "Die Verletzungsprüfung fragt: Welches Zeichen wird benutzt, für welche Waren, und wie ähnlich sind die beiden Seiten? Artikel 25, 36 und 37 regeln die Rechte des Inhabers.",
+        "it": "L'analisi della contraffazione chiede: quale segno, per quali prodotti, e quanto sono simili le due parti? Gli articoli 25, 36 e 37 stabiliscono i diritti del titolare."
+      },
+      "practice": {
+        "ja": "海外取引先に侵害リスクを説明する際、名称の類似性だけで判断する誤解が生じやすい。商品・役務の類似性も同様に重要であることを明確に伝えること。",
+        "en": "When briefing overseas clients on a potential infringement, avoid reducing the analysis to simple name similarity. Similarity of goods and services is equally important and often determines the outcome.",
+        "de": "Wenn ausländische Mandanten über eine mögliche Verletzung informiert werden, sollte die Analyse nicht auf bloße Namensähnlichkeit reduziert werden.",
+        "it": "Quando si informa la clientela straniera su una potenziale contraffazione, evitare di ridurre l'analisi alla semplice somiglianza dei nomi."
+      }
+    },
+    "related_terms": [
+      "similarity",
+      "unauthorized use",
+      "enforcement"
+    ],
+    "articles": [
+      "25",
+      "36",
+      "37"
+    ],
+    "tags": [
+      "infringement",
+      "scope",
+      "enforcement"
+    ]
+  },
+  {
+    "id": "tm-basic-0010",
+    "level": "basic",
+    "topic": {
+      "ja": "ライセンスとマドリッド制度",
+      "en": "Licensing and the Madrid route",
+      "de": "Lizenzierung und der Madrider Weg",
+      "it": "Licenze e via di Madrid"
+    },
+    "summary": {
+      "ja": "商標権はライセンスにより第三者に利用許諾でき、マドリッド制度を利用した国際出願も可能である。",
+      "en": "Trademark rights may be licensed, and international filing may be streamlined through the Madrid system.",
+      "de": "Markenrechte können lizenziert werden, und internationale Anmeldungen können über das Madrider System vereinfacht werden.",
+      "it": "I diritti di marchio possono essere concessi in licenza, e il deposito internazionale può essere semplificato tramite il sistema di Madrid."
+    },
+    "notes": {
+      "law": {
+        "ja": "ライセンスにより権利者は所有権を保持しつつ第三者の使用を許諾できる。第68条の2に基づくマドリッド制度では、一の国際出願で複数国を指定できる。",
+        "en": "Licensing allows the owner to authorize third-party use while retaining ownership. The Madrid Protocol (Article 68-2) enables a single international application designating multiple countries.",
+        "de": "Lizenzen erlauben es dem Inhaber, die Nutzung durch Dritte zu genehmigen. Das Madrider Protokoll ermöglicht eine einzige internationale Anmeldung für mehrere Länder.",
+        "it": "Le licenze consentono al titolare di autorizzare l'uso da parte di terzi. Il Protocollo di Madrid consente una singola domanda internazionale che designa più paesi."
+      },
+      "practice": {
+        "ja": "日本以外への展開を検討するクライアントには、マドリッド制度が費用対効果の高い出発点となることが多い。ただしマドリッド制度が利用できない国や現地での個別戦略が必要な場合は国内出願が別途必要になる点に注意。",
+        "en": "When a client plans to expand beyond Japan, the Madrid route is often the most cost-effective starting point. However, national filings may still be needed in countries not covered by the Madrid system.",
+        "de": "Wenn ein Mandant eine Expansion plant, ist der Madrider Weg oft der kosteneffizienteste Ausgangspunkt. Nationale Anmeldungen können jedoch weiterhin erforderlich sein.",
+        "it": "Quando un cliente pianifica di espandersi oltre il Giappone, la via di Madrid è spesso il punto di partenza più conveniente. Tuttavia, depositi nazionali possono ancora essere necessari."
+      }
+    },
+    "related_terms": [
+      "license",
+      "exclusive license",
+      "Madrid Protocol",
+      "international registration"
+    ],
+    "articles": [
+      "30",
+      "68-2"
+    ],
+    "tags": [
+      "license",
+      "madrid",
+      "international"
+    ]
+  },
+  {
+    "id": "tm-basic-0011",
+    "level": "basic",
+    "topic": {
+      "ja": "商標の類似判断：外観・称呼・観念",
+      "en": "Trademark similarity: appearance, sound, and concept",
+      "de": "Markenähnlichkeit: Erscheinungsbild, Klang und Bedeutung",
+      "it": "Somiglianza tra marchi: aspetto, suono e concetto"
+    },
+    "summary": {
+      "ja": "日本における商標の類似判断は、外観・称呼・観念の三つの観点から総合的に行われる。",
+      "en": "In Japan, trademark similarity is assessed by comparing appearance, sound, and conceptual meaning in an overall evaluation.",
+      "de": "In Japan wird die Markenähnlichkeit anhand von Erscheinungsbild, Klang und begrifflicher Bedeutung in einer Gesamtbetrachtung beurteilt.",
+      "it": "In Giappone, la somiglianza tra marchi viene valutata confrontando aspetto visivo, suono e significato concettuale in una valutazione complessiva."
+    },
+    "notes": {
+      "law": {
+        "ja": "外観は視覚的な印象、称呼は読み方・音の印象、観念は意味・概念の印象をそれぞれ比較する。いずれか一つが類似しても直ちに類似商標となるわけではなく、取引の実情を踏まえた総合判断が求められる。英国法の visual・aural・conceptual similarity の三要素と基本的に対応するが、日本では後述の「取引の実情」が加わる点が異なる。",
+        "en": "Appearance refers to visual impression, sound to phonetic impression, and concept to the meaning or idea conveyed. Similarity in one element alone does not automatically lead to a finding of overall similarity; a holistic judgment taking into account the circumstances of trade is required. This framework broadly corresponds to the visual, aural, and conceptual similarity analysis used in UK and EU trademark law, but Japanese law adds the further consideration of trade circumstances.",
+        "de": "Erscheinungsbild betrifft den visuellen Eindruck, Klang den phonetischen Eindruck und Bedeutung die vermittelte Idee oder den Sinn. Ähnlichkeit in einem Element allein führt nicht automatisch zu einer Gesamtähnlichkeit; eine Gesamtbetrachtung unter Berücksichtigung der Handelsverhältnisse ist erforderlich. Dieser Rahmen entspricht weitgehend der im britischen und EU-Markenrecht verwendeten Analyse, aber das japanische Recht ergänzt die Berücksichtigung der Handelsumstände.",
+        "it": "L'aspetto riguarda l'impressione visiva, il suono l'impressione fonetica e il concetto il significato o l'idea trasmessa. La somiglianza in un solo elemento non porta automaticamente a una conclusione di somiglianza complessiva; è richiesta una valutazione olistica che tenga conto delle circostanze commerciali. Questo quadro corrisponde in linea di massima all'analisi usata nel diritto dei marchi britannico ed europeo, ma il diritto giapponese aggiunge la considerazione delle circostanze commerciali."
+      },
+      "practice": {
+        "ja": "海外取引先に類似判断を説明する際は、英国・EU法の三要素と対応することを示しつつ、「取引の実情」という日本固有の要素が加わることを強調する。単純な名称比較では不十分であることをまず伝えること。",
+        "en": "When explaining the similarity framework to overseas partners, it helps to map it onto the visual/aural/conceptual structure they may already know from UK or EU trademark law, while clearly flagging that Japanese law also considers the circumstances of trade as an additional factor. Always stress that name comparison alone is insufficient.",
+        "de": "Bei der Erläuterung des Ähnlichkeitsrahmens gegenüber ausländischen Partnern ist es hilfreich, ihn auf die visuell/aurale/konzeptuelle Struktur abzubilden, die sie möglicherweise aus dem britischen oder EU-Markenrecht kennen, während man klar darauf hinweist, dass das japanische Recht auch die Handelsumstände als zusätzlichen Faktor berücksichtigt.",
+        "it": "Quando si spiega il quadro della somiglianza a partner stranieri, è utile collegarlo alla struttura visivo/aurale/concettuale che potrebbero già conoscere dal diritto dei marchi britannico o europeo, sottolineando chiaramente che il diritto giapponese considera anche le circostanze commerciali come fattore aggiuntivo."
+      }
+    },
+    "related_terms": [
+      "appearance",
+      "sound",
+      "concept",
+      "overall impression",
+      "similarity assessment"
+    ],
+    "articles": [
+      "4"
+    ],
+    "tags": [
+      "similarity",
+      "appearance",
+      "sound",
+      "concept",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0012",
+    "level": "basic",
+    "topic": {
+      "ja": "取引の実情の考慮",
+      "en": "Trade circumstances as a factor in similarity",
+      "de": "Handelsumstände als Ähnlichkeitsfaktor",
+      "it": "Le circostanze commerciali come fattore di somiglianza"
+    },
+    "summary": {
+      "ja": "日本の商標類似判断では、外観・称呼・観念に加え、需要者層や取引慣行などの取引の実情が考慮される。",
+      "en": "In Japan, similarity analysis goes beyond the three-element test to also consider the actual circumstances of trade, including the relevant consumer base and trade practices.",
+      "de": "In Japan geht die Ähnlichkeitsanalyse über den Drei-Elemente-Test hinaus und berücksichtigt auch die tatsächlichen Handelsverhältnisse, einschließlich der relevanten Verbrauchergruppe und Handelspraktiken.",
+      "it": "In Giappone, l'analisi della somiglianza va oltre il test dei tre elementi e considera anche le effettive circostanze commerciali, inclusi la base di consumatori rilevante e le pratiche commerciali."
+    },
+    "notes": {
+      "law": {
+        "ja": "取引の実情とは、当該商品・役務が実際にどのような需要者に、どのような流通経路で取引されているかを指す。例えば、専門家向け商品では需要者の識別力が高いため、一般消費者向けより類似の幅が狭くなりうる。また、商品の性質（高額品か日用品か）や購買行動も判断に影響する。英国法が「average consumer」の全体的印象を中心に据えるのに対し、日本法は取引実態をより具体的に考慮する点で異なる。",
+        "en": "Trade circumstances refer to how the goods or services in question are actually traded: to which consumers, through which channels, and under what conditions. For example, where goods are directed at specialists, the consumer's ability to distinguish marks may be higher, potentially narrowing the scope of similarity compared with mass-market goods. The nature of the goods (luxury vs. everyday items) and purchasing behavior also influence the assessment. Unlike UK law, which centers on the overall impression of an average consumer, Japanese law invites a more fact-specific inquiry into actual trade conditions.",
+        "de": "Handelsumstände beziehen sich darauf, wie die betreffenden Waren oder Dienstleistungen tatsächlich gehandelt werden: an welche Verbraucher, über welche Kanäle und unter welchen Bedingungen. Wo Waren an Spezialisten gerichtet sind, kann die Unterscheidungsfähigkeit höher sein, was den Ähnlichkeitsbereich gegenüber Massenprodukten einengen kann. Anders als das britische Recht, das sich auf den Gesamteindruck eines Durchschnittsverbrauchers konzentriert, lädt das japanische Recht zu einer faktenspezifischeren Untersuchung der tatsächlichen Handelsbedingungen ein.",
+        "it": "Le circostanze commerciali si riferiscono a come i prodotti o servizi in questione vengono effettivamente commercializzati: a quali consumatori, attraverso quali canali e in quali condizioni. Dove i prodotti sono destinati a specialisti, la capacità di distinguere i marchi può essere maggiore, restringendo potenzialmente la portata della somiglianza rispetto ai prodotti di massa. A differenza del diritto britannico, che si concentra sull'impressione complessiva di un consumatore medio, il diritto giapponese invita a un'indagine più specifica sui fatti delle condizioni commerciali effettive."
+      },
+      "practice": {
+        "ja": "類似性の評価が変わりうる要素として「誰が買うか」「どこで売られているか」を海外取引先に具体的に提示すると理解しやすい。同じ商標でも、医薬品市場と日用品市場では結論が異なる可能性があることを例示すると効果的。",
+        "en": "When explaining this to overseas partners, grounding it in concrete examples is effective: point out that the same pair of marks might be found similar in a mass-market context but not in a specialist professional market, because the relevant consumers differ. The questions 'who buys this?' and 'where is it sold?' are practical anchors for the discussion.",
+        "de": "Bei der Erklärung gegenüber ausländischen Partnern ist eine Verankerung in konkreten Beispielen wirksam: Dasselbe Markenpaar könnte in einem Massenmarktkontext ähnlich, aber nicht in einem Fachmarkt sein, weil die relevanten Verbraucher unterschiedlich sind.",
+        "it": "Quando si spiega questo a partner stranieri, è efficace ancorare la discussione in esempi concreti: la stessa coppia di marchi potrebbe essere ritenuta simile in un contesto di mercato di massa ma non in un mercato professionale specializzato, perché i consumatori rilevanti differiscono."
+      }
+    },
+    "related_terms": [
+      "trade circumstances",
+      "relevant consumer",
+      "purchasing behavior",
+      "specialist market"
+    ],
+    "articles": [
+      "4"
+    ],
+    "tags": [
+      "similarity",
+      "trade circumstances",
+      "consumer",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0013",
+    "level": "basic",
+    "topic": {
+      "ja": "称呼類似の実務",
+      "en": "Phonetic similarity in practice",
+      "de": "Phonetische Ähnlichkeit in der Praxis",
+      "it": "Somiglianza fonetica nella pratica"
+    },
+    "summary": {
+      "ja": "称呼（読み・音）の類似は商標の混同を招く最大の要因の一つであり、日本語特有の音韻的問題も実務上重要である。",
+      "en": "Phonetic similarity is one of the most frequent causes of trademark confusion, and Japan-specific phonological issues add further complexity in practice.",
+      "de": "Phonetische Ähnlichkeit ist eine der häufigsten Ursachen für Markenverwirrung, und japanspezifische phonologische Probleme erhöhen die Komplexität in der Praxis.",
+      "it": "La somiglianza fonetica è una delle cause più frequenti di confusione tra marchi, e i problemi fonologici specifici del giapponese aggiungono ulteriore complessità nella pratica."
+    },
+    "notes": {
+      "law": {
+        "ja": "称呼は商標を音として発音したときの印象で比較する。日本語では、漢字の音読み・訓読みの違い、カタカナ表記の揺れ（例：「コーヒー」と「コーヒ」）、外来語の音訳の差異などが称呼類似の判断を複雑にする。また、長い称呼では要部（最も印象に残る部分）の類似が重視される傾向がある。英国法でいう aural similarity に相当するが、日本語・英語・外来語が混在する環境ではより多くの変数が生じる。",
+        "en": "Phonetic similarity is assessed by comparing the impression created when each mark is spoken aloud. In Japanese practice, complicating factors include: the difference between on-yomi (Chinese reading) and kun-yomi (Japanese reading) of kanji; variation in katakana transcription of foreign words; and divergent phonetic renderings of loanwords. For longer marks, the dominant element—the part most likely to be retained in memory—tends to receive greater weight. This broadly corresponds to aural similarity in UK law, but the multilingual environment of Japanese commerce introduces additional variables.",
+        "de": "Phonetische Ähnlichkeit wird durch Vergleich des Eindrucks bewertet, der entsteht, wenn jede Marke laut ausgesprochen wird. In der japanischen Praxis gibt es erschwerende Faktoren wie den Unterschied zwischen On-Yomi und Kun-Yomi von Kanji sowie Variationen in der Katakana-Transkription von Fremdwörtern. Bei längeren Marken tendiert das dominante Element dazu, mehr Gewicht zu erhalten.",
+        "it": "La somiglianza fonetica viene valutata confrontando l'impressione creata quando ciascun marchio viene pronunciato ad alta voce. Nella pratica giapponese, i fattori complicanti includono: la differenza tra on-yomi e kun-yomi dei kanji; variazioni nella trascrizione katakana di parole straniere; e diverse rese fonetiche dei prestiti linguistici. Per i marchi più lunghi, l'elemento dominante tende a ricevere maggiore peso."
+      },
+      "practice": {
+        "ja": "外来語ブランドを日本市場に導入する際は、カタカナ表記が既存商標の称呼に類似しないか事前確認が必須。同一の外来語でも複数のカタカナ表記が存在することがあるため、想定されるすべての表記について調査する必要がある。また、日本語話者が自然に発音したときの音と、原語の発音とが大きく異なる場合があることにも注意。",
+        "en": "When introducing a foreign-language brand into the Japanese market, it is essential to check in advance whether any likely katakana rendering conflicts phonetically with existing registered marks. The same foreign word may have multiple katakana spellings in circulation, so the clearance search should cover all plausible transcriptions. Also note that the way Japanese speakers naturally pronounce a foreign brand can differ substantially from the original-language pronunciation, which affects the phonetic comparison.",
+        "de": "Bei der Einführung einer fremdsprachigen Marke in den japanischen Markt ist es unerlässlich, im Voraus zu prüfen, ob eine wahrscheinliche Katakana-Darstellung phonetisch mit bestehenden eingetragenen Marken kollidiert. Dasselbe Fremdwort kann mehrere Katakana-Schreibweisen haben, daher sollte die Recherche alle plausiblen Transkriptionen abdecken.",
+        "it": "Quando si introduce un marchio in lingua straniera nel mercato giapponese, è essenziale verificare in anticipo se una probabile resa katakana confligge foneticamente con marchi registrati esistenti. La stessa parola straniera può avere più grafie katakana in circolazione, quindi la ricerca preliminare dovrebbe coprire tutte le trascrizioni plausibili."
+      }
+    },
+    "related_terms": [
+      "phonetic similarity",
+      "katakana",
+      "on-yomi",
+      "kun-yomi",
+      "dominant element",
+      "aural similarity"
+    ],
+    "articles": [
+      "4"
+    ],
+    "tags": [
+      "similarity",
+      "phonetic",
+      "katakana",
+      "japanese-specific",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0014",
+    "level": "basic",
+    "topic": {
+      "ja": "3条1項各号：識別力欠如の類型",
+      "en": "Article 3(1): categories of marks lacking distinctiveness",
+      "de": "Artikel 3 Abs. 1: Kategorien unterscheidungskraftloser Zeichen",
+      "it": "Articolo 3 comma 1: categorie di segni privi di capacità distintiva"
+    },
+    "summary": {
+      "ja": "商標法3条1項は、識別力を欠くとして登録できない商標の類型を各号に列挙する。",
+      "en": "Article 3(1) lists specific categories of marks that cannot be registered for lack of distinctiveness.",
+      "de": "Artikel 3 Abs. 1 listet bestimmte Kategorien von Zeichen auf, die mangels Unterscheidungskraft nicht eingetragen werden können.",
+      "it": "L'articolo 3 comma 1 elenca categorie specifiche di segni che non possono essere registrati per mancanza di capacità distintiva."
+    },
+    "notes": {
+      "law": {
+        "ja": "主な類型は以下のとおり。1号：商品の産地・品質・原材料等を普通に表示する標章。2号：商品・役務の慣用標章。3号：ありふれた氏または名称。4号：ありふれた図形等。5号：極めて簡単かつありふれた標章。6号：1〜5号に該当しない識別力なき標章。これらは需要者が特定人の業務に係る商品・役務であると認識できないため、登録できない。",
+        "en": "The main categories are: item 1, marks that commonly indicate the place of origin, quality, raw materials, or other characteristics of the goods; item 2, customary marks for the goods or services; item 3, common surnames or names; item 4, common devices or shapes; item 5, extremely simple and common marks; item 6, any other mark lacking distinctiveness not covered by items 1–5. These cannot be registered because consumers would not perceive them as identifying a single commercial source.",
+        "de": "Die Hauptkategorien sind: Nr. 1, Zeichen, die üblicherweise Herkunftsort, Qualität, Rohstoffe oder andere Merkmale der Waren angeben; Nr. 2, gebräuchliche Zeichen für die Waren oder Dienstleistungen; Nr. 3, gewöhnliche Familiennamen oder Namen; Nr. 4, gewöhnliche Darstellungen oder Formen; Nr. 5, äußerst einfache und gewöhnliche Zeichen; Nr. 6, sonstige Zeichen ohne Unterscheidungskraft.",
+        "it": "Le categorie principali sono: n. 1, segni che indicano comunemente il luogo di origine, la qualità, le materie prime o altre caratteristiche dei prodotti; n. 2, segni d'uso comune per i prodotti o servizi; n. 3, cognomi o nomi comuni; n. 4, figure o forme comuni; n. 5, segni estremamente semplici e comuni; n. 6, qualsiasi altro segno privo di capacità distintiva."
+      },
+      "practice": {
+        "ja": "ブランド名の選定時に、商品の特徴を直接説明する語句は1号・2号に該当するリスクが高い。また、ありふれた姓（例：「田中」「鈴木」）は3号に該当しうる。出願前に各号への該当可能性を確認しておくことが重要。3条2項による救済（使用による識別力の取得）は別途検討。",
+        "en": "When advising on brand naming, words that directly describe product characteristics carry a high risk of falling under items 1 or 2. Common surnames also risk rejection under item 3. Check for potential hits against each category before filing. Acquisition of distinctiveness through use under Article 3(2) is a separate avenue to consider.",
+        "de": "Bei der Markenberatung tragen Wörter, die Produktmerkmale direkt beschreiben, ein hohes Risiko, unter Nr. 1 oder 2 zu fallen. Gewöhnliche Familiennamen können unter Nr. 3 abgelehnt werden. Vor der Anmeldung sollte die Anwendbarkeit jeder Kategorie geprüft werden.",
+        "it": "Nella consulenza sui marchi, le parole che descrivono direttamente le caratteristiche del prodotto comportano un alto rischio di rientrare nei nn. 1 o 2. I cognomi comuni possono essere respinti ai sensi del n. 3. Prima del deposito è importante verificare l'applicabilità di ciascuna categoria."
+      }
+    },
+    "related_terms": [
+      "absolute grounds",
+      "distinctiveness",
+      "descriptive mark",
+      "generic term",
+      "common surname"
+    ],
+    "articles": [
+      "3-1"
+    ],
+    "tags": [
+      "absolute grounds",
+      "article 3",
+      "distinctiveness",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0015",
+    "level": "basic",
+    "topic": {
+      "ja": "3条2項：使用による識別力の取得",
+      "en": "Article 3(2): acquired distinctiveness through use",
+      "de": "Artikel 3 Abs. 2: erworbene Unterscheidungskraft durch Benutzung",
+      "it": "Articolo 3 comma 2: capacità distintiva acquisita tramite uso"
+    },
+    "summary": {
+      "ja": "3条1項各号に該当する商標でも、使用の結果需要者に広く認識されるに至ったものは、例外的に登録が認められる。",
+      "en": "Even a mark falling under Article 3(1) may be registered if, as a result of use, it has become widely recognized among consumers.",
+      "de": "Selbst ein Zeichen, das unter Artikel 3 Abs. 1 fällt, kann eingetragen werden, wenn es infolge der Benutzung bei den Verbrauchern allgemein bekannt geworden ist.",
+      "it": "Anche un segno che rientra nell'articolo 3 comma 1 può essere registrato se, a seguito dell'uso, è diventato ampiamente noto tra i consumatori."
+    },
+    "notes": {
+      "law": {
+        "ja": "3条2項は、本来識別力を欠く標章であっても、出願人による使用の結果として需要者が特定人の業務に係る商品・役務を表示するものとして広く認識されていることを証明できれば登録を認める規定。いわゆる「セカンダリー・ミーニング（secondary meaning）」の法理に相当する。ただし適用があるのは3条1項1号〜5号に限られ、6号には適用されない点に注意。",
+        "en": "Article 3(2) allows registration of an otherwise non-distinctive mark if the applicant can demonstrate that, as a result of use, consumers have come to widely recognize it as indicating the goods or services of a particular business. This corresponds to the doctrine of secondary meaning known in common law systems. Note that the provision applies only to marks falling under items 1–5 of Article 3(1), not to item 6.",
+        "de": "Artikel 3 Abs. 2 erlaubt die Eintragung eines sonst nicht unterscheidungskräftigen Zeichens, wenn der Anmelder nachweisen kann, dass die Verbraucher es infolge der Benutzung weitgehend als Hinweis auf die Waren oder Dienstleistungen eines bestimmten Unternehmens erkennen. Dies entspricht der Lehre der sekundären Unterscheidungskraft. Die Vorschrift gilt nur für Zeichen nach Nummern 1–5, nicht für Nummer 6.",
+        "it": "L'articolo 3 comma 2 consente la registrazione di un segno altrimenti privo di capacità distintiva se il richiedente può dimostrare che, a seguito dell'uso, i consumatori sono giunti a riconoscerlo ampiamente come indicatore dei prodotti o servizi di una determinata impresa. Ciò corrisponde alla dottrina del secondary meaning. La disposizione si applica solo ai segni rientranti nei nn. 1–5, non al n. 6."
+      },
+      "practice": {
+        "ja": "3条2項の主張には、長期にわたる使用実績・売上高・広告宣伝費・需要者認知度調査などの証拠が必要。出願段階から使用証拠を体系的に蓄積しておくことが重要。海外取引先には「secondary meaning」の概念として説明すると伝わりやすい。",
+        "en": "Claiming Article 3(2) requires substantial evidence, including records of long-term use, sales figures, advertising expenditure, and consumer recognition surveys. It is important to begin collecting such evidence systematically from the time use commences. When explaining this to overseas partners, the concept of secondary meaning is a useful reference point.",
+        "de": "Die Geltendmachung von Artikel 3 Abs. 2 erfordert erhebliche Beweise, einschließlich Nachweise über langjährige Nutzung, Umsatzzahlen, Werbeausgaben und Verbraucherbekanntheitsumfragen. Das Konzept der sekundären Unterscheidungskraft ist ein nützlicher Referenzpunkt für ausländische Partner.",
+        "it": "Invocare l'articolo 3 comma 2 richiede prove sostanziali, tra cui documentazione di uso prolungato, cifre di vendita, spese pubblicitarie e sondaggi sul riconoscimento dei consumatori. Il concetto di secondary meaning è un utile punto di riferimento per i partner stranieri."
+      }
+    },
+    "related_terms": [
+      "secondary meaning",
+      "acquired distinctiveness",
+      "use evidence",
+      "consumer recognition"
+    ],
+    "articles": [
+      "3-2"
+    ],
+    "tags": [
+      "absolute grounds",
+      "article 3",
+      "acquired distinctiveness",
+      "secondary meaning",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0016",
+    "level": "basic",
+    "topic": {
+      "ja": "4条1項7号：公序良俗違反",
+      "en": "Article 4(1)(vii): marks contrary to public order or morality",
+      "de": "Artikel 4 Abs. 1 Nr. 7: Zeichen gegen die öffentliche Ordnung oder die guten Sitten",
+      "it": "Articolo 4 comma 1 n. 7: segni contrari all'ordine pubblico o al buon costume"
+    },
+    "summary": {
+      "ja": "公の秩序または善良な風俗を害するおそれがある商標は登録できない。",
+      "en": "Marks that are likely to harm public order or morality cannot be registered.",
+      "de": "Zeichen, die die öffentliche Ordnung oder die guten Sitten verletzen könnten, können nicht eingetragen werden.",
+      "it": "I segni che possono ledere l'ordine pubblico o il buon costume non possono essere registrati."
+    },
+    "notes": {
+      "law": {
+        "ja": "7号は幅広い概念であり、①差別的・侮辱的な表示、②国旗・国章等の冒用に準じる表示、③他人の著名な商標と同一・類似で不正目的のある出願など、多様な場面に適用される。不正目的による出願（いわゆる「商標ハイジャック」）を阻止する手段としても機能する。特定の条文に当てはまらない不正な出願を包括的に排除する役割を持つ。",
+        "en": "Item (vii) is a broad residual ground covering: discriminatory or derogatory marks; marks that abuse national flags, emblems, or similar symbols; and applications filed in bad faith, such as those targeting well-known foreign marks without authorization. It serves as a catch-all provision to block improper applications that do not fall neatly under other specific grounds, including so-called trademark hijacking.",
+        "de": "Nr. 7 ist ein breiter Auffangtatbestand, der diskriminierende oder abwertende Zeichen, den Missbrauch von Nationalflaggen oder Hoheitszeichen sowie bösgläubige Anmeldungen wie das sogenannte Trademark-Hijacking erfasst. Er dient als Auffangvorschrift für unzulässige Anmeldungen, die nicht unter spezifischere Vorschriften fallen.",
+        "it": "Il n. 7 è un motivo residuale ampio che comprende: segni discriminatori o denigratori; segni che abusano di bandiere nazionali o emblemi; e domande depositate in malafede, come il cosiddetto trademark hijacking. Funziona come clausola generale per bloccare domande improprie che non rientrano chiaramente in altri motivi specifici."
+      },
+      "practice": {
+        "ja": "海外ブランドが日本市場参入前に第三者に商標を先取りされるケース（いわゆるブランドスクワッティング）では、7号が有力な対抗手段となりうる。ただし不正目的の立証が必要であり、証拠収集が重要。海外取引先には「bad faith application」として説明するとわかりやすい。",
+        "en": "Where a foreign brand's mark is filed by a third party in Japan before the brand owner enters the market (brand squatting), Article 4(1)(vii) can be a powerful tool to challenge the registration. However, bad faith must be demonstrated, making evidence collection critical. Explaining this as a bad faith ground is effective with overseas partners.",
+        "de": "Wenn die Marke eines ausländischen Unternehmens von einem Dritten in Japan vor dem Markteintritt angemeldet wird (Brand-Squatting), kann Artikel 4 Abs. 1 Nr. 7 ein wirksames Mittel zur Anfechtung der Eintragung sein. Bösgläubigkeit muss jedoch nachgewiesen werden.",
+        "it": "Quando il marchio di un'azienda straniera viene depositato da un terzo in Giappone prima dell'ingresso nel mercato (brand squatting), l'articolo 4 comma 1 n. 7 può essere uno strumento potente per contestare la registrazione. Tuttavia, la malafede deve essere dimostrata."
+      }
+    },
+    "related_terms": [
+      "public order",
+      "morality",
+      "bad faith",
+      "trademark hijacking",
+      "brand squatting"
+    ],
+    "articles": [
+      "4-1-7"
+    ],
+    "tags": [
+      "relative grounds",
+      "article 4",
+      "public order",
+      "bad faith",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0017",
+    "level": "basic",
+    "topic": {
+      "ja": "4条1項8号：他人の氏名・著名略称等",
+      "en": "Article 4(1)(viii): another person's name or well-known abbreviation",
+      "de": "Artikel 4 Abs. 1 Nr. 8: Name oder bekannte Abkürzung einer anderen Person",
+      "it": "Articolo 4 comma 1 n. 8: nome o abbreviazione nota di un'altra persona"
+    },
+    "summary": {
+      "ja": "他人の氏名、名称、著名な略称等を含む商標は、その他人の承諾がない限り登録できない。",
+      "en": "A mark containing another person's name, trade name, or well-known abbreviation cannot be registered without that person's consent.",
+      "de": "Eine Marke, die den Namen, die Firma oder eine bekannte Abkürzung einer anderen Person enthält, kann ohne deren Zustimmung nicht eingetragen werden.",
+      "it": "Un marchio contenente il nome, la denominazione commerciale o un'abbreviazione nota di un'altra persona non può essere registrato senza il consenso di quella persona."
+    },
+    "notes": {
+      "law": {
+        "ja": "8号が保護する「他人」には自然人・法人の双方が含まれる。著名な略称とは、例えば著名企業の通称や著名人の芸名・ペンネームなどが該当する。「著名」の要件は広く解されており、国内外で知られている必要はなく、関連する需要者の間で知られていれば足りるとされる。本号は人格権的な性格を持つ規定である。",
+        "en": "The 'other person' protected under item (viii) includes both natural persons and legal entities. Well-known abbreviations cover, for example, common short-form names of well-known companies and stage names or pen names of well-known individuals. The requirement of being 'well-known' is interpreted broadly; it is sufficient that the name is recognized among the relevant consumers, without requiring nationwide or international fame. This provision has a personality-right character.",
+        "de": "Die durch Nr. 8 geschützte 'andere Person' umfasst sowohl natürliche als auch juristische Personen. Bekannte Abkürzungen umfassen z. B. gängige Kurzbezeichnungen bekannter Unternehmen und Künstlernamen oder Pseudonyme bekannter Persönlichkeiten. Das Erfordernis der 'Bekanntheit' wird weit ausgelegt.",
+        "it": "L'altra persona protetta dal n. 8 include sia persone fisiche che giuridiche. Le abbreviazioni note comprendono, ad esempio, nomi brevi comuni di aziende note e nomi d'arte o pseudonimi di persone note. Il requisito della notorietà è interpretato in senso ampio."
+      },
+      "practice": {
+        "ja": "著名人や有名企業の名称・略称を含むブランド名を採用する際は、8号リスクを必ず確認する。本人の承諾（同意書）を取得すれば登録可能となるが、交渉が難航するケースも多い。海外ブランドの日本進出時に、現地の著名人名と類似するケースでも注意が必要。",
+        "en": "When adopting a brand name that incorporates the name or abbreviation of a well-known individual or company, always assess the risk under item (viii). Registration becomes possible with the consent of the person concerned, but obtaining such consent can be difficult in practice. Be alert also where a foreign brand's name resembles a well-known Japanese person's name.",
+        "de": "Bei der Übernahme eines Markennamens, der den Namen oder die Abkürzung einer bekannten Person oder eines bekannten Unternehmens enthält, ist das Risiko nach Nr. 8 stets zu prüfen. Mit Zustimmung der betroffenen Person wird die Eintragung möglich, aber die Zustimmung zu erlangen kann schwierig sein.",
+        "it": "Quando si adotta un nome di marca che incorpora il nome o l'abbreviazione di un individuo o azienda nota, valutare sempre il rischio ai sensi del n. 8. La registrazione diventa possibile con il consenso della persona interessata, ma ottenere tale consenso può essere difficile in pratica."
+      }
+    },
+    "related_terms": [
+      "personal name",
+      "trade name",
+      "well-known abbreviation",
+      "consent",
+      "personality right"
+    ],
+    "articles": [
+      "4-1-8"
+    ],
+    "tags": [
+      "relative grounds",
+      "article 4",
+      "personal name",
+      "consent",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0018",
+    "level": "basic",
+    "topic": {
+      "ja": "4条1項10号：未登録周知商標",
+      "en": "Article 4(1)(x): unregistered well-known marks",
+      "de": "Artikel 4 Abs. 1 Nr. 10: nicht eingetragene bekannte Marken",
+      "it": "Articolo 4 comma 1 n. 10: marchi notori non registrati"
+    },
+    "summary": {
+      "ja": "需要者の間に広く認識されている他人の未登録商標と同一・類似の商標は、同一・類似の商品・役務について登録できない。",
+      "en": "A mark identical or similar to another party's unregistered mark that is widely recognized among consumers cannot be registered for identical or similar goods or services.",
+      "de": "Eine Marke, die mit der nicht eingetragenen Marke einer anderen Partei identisch oder ähnlich ist und bei den Verbrauchern weit bekannt ist, kann nicht für identische oder ähnliche Waren oder Dienstleistungen eingetragen werden.",
+      "it": "Un marchio identico o simile al marchio non registrato di un'altra parte, ampiamente noto tra i consumatori, non può essere registrato per prodotti o servizi identici o simili."
+    },
+    "notes": {
+      "law": {
+        "ja": "10号は登録されていない商標であっても、需要者の間に広く認識されている（周知性を有する）ものを保護する。周知性は全国的知名度を要しないが、一定の地域・業界内での周知では足りる場合と足りない場合があり、個別事案による判断が必要。先願主義の例外として機能し、後願が先願登録を排除する手段となりうる。",
+        "en": "Item (x) protects unregistered marks that have acquired wide recognition among consumers, without requiring formal registration. Nationwide recognition is not always necessary, but recognition limited to a very narrow local or sector-specific scope may be insufficient; the assessment is fact-specific. This provision functions as an exception to the first-to-file principle, allowing a well-known prior user to oppose a later application.",
+        "de": "Nr. 10 schützt nicht eingetragene Marken, die bei den Verbrauchern breite Anerkennung erlangt haben, ohne formale Eintragung zu erfordern. Landesweite Bekanntheit ist nicht immer erforderlich, aber eine sehr enge lokale oder branchenspezifische Bekanntheit kann unzureichend sein.",
+        "it": "Il n. 10 protegge i marchi non registrati che hanno acquisito ampio riconoscimento tra i consumatori, senza richiedere la registrazione formale. La notorietà a livello nazionale non è sempre necessaria, ma una notorietà molto limitata a livello locale o settoriale può essere insufficiente."
+      },
+      "practice": {
+        "ja": "長年使用してきた未登録商標が第三者に先取り登録されるリスクへの対処として、10号に基づく異議申立・無効審判が有効。ただし周知性の立証責任は主張する側にあるため、使用証拠の継続的な保存が不可欠。海外では登録なき周知商標保護の制度が異なるため、海外取引先に対しては日本法上の位置づけを丁寧に説明する必要がある。",
+        "en": "Where a long-used unregistered mark has been registered by a third party, an opposition or invalidation action under item (x) is a viable response. However, the burden of proving well-known status lies with the claimant, making systematic preservation of use evidence essential. The protection of unregistered well-known marks varies significantly across jurisdictions, so the Japanese position should be explained carefully to overseas partners.",
+        "de": "Wenn eine langjährig genutzte nicht eingetragene Marke von einem Dritten eingetragen wurde, ist ein Widerspruch oder ein Nichtigkeitsverfahren nach Nr. 10 eine mögliche Reaktion. Die Beweislast für die Bekanntheit liegt beim Antragsteller, weshalb die systematische Aufbewahrung von Nutzungsnachweisen unerlässlich ist.",
+        "it": "Quando un marchio non registrato usato a lungo è stato registrato da un terzo, un'opposizione o un'azione di invalidità ai sensi del n. 10 è una risposta praticabile. L'onere di provare la notorietà spetta al richiedente, rendendo essenziale la conservazione sistematica delle prove d'uso."
+      }
+    },
+    "related_terms": [
+      "well-known mark",
+      "unregistered mark",
+      "prior user",
+      "opposition",
+      "invalidation"
+    ],
+    "articles": [
+      "4-1-10"
+    ],
+    "tags": [
+      "relative grounds",
+      "article 4",
+      "well-known mark",
+      "unregistered",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0019",
+    "level": "basic",
+    "topic": {
+      "ja": "4条1項11号：先願登録商標との抵触",
+      "en": "Article 4(1)(xi): conflict with an earlier registered mark",
+      "de": "Artikel 4 Abs. 1 Nr. 11: Kollision mit einer älteren eingetragenen Marke",
+      "it": "Articolo 4 comma 1 n. 11: conflitto con un marchio registrato anteriore"
+    },
+    "summary": {
+      "ja": "先に登録された他人の商標と同一・類似であり、かつ指定商品・役務が同一・類似である場合、後願は登録できない。",
+      "en": "A mark that is identical or similar to an earlier registered mark of another party and covers identical or similar goods or services cannot be registered.",
+      "de": "Eine Marke, die mit einer älteren eingetragenen Marke einer anderen Partei identisch oder ähnlich ist und identische oder ähnliche Waren oder Dienstleistungen umfasst, kann nicht eingetragen werden.",
+      "it": "Un marchio identico o simile a un marchio registrato anteriore di un'altra parte e che copre prodotti o servizi identici o simili non può essere registrato."
+    },
+    "notes": {
+      "law": {
+        "ja": "11号は相対的拒絶事由の中で最も適用頻度が高い。判断の枠組みは①商標の類似（外観・称呼・観念および取引の実情による総合判断）と②指定商品・役務の類似の両方が要件となる。いずれか一方のみでは足りない。先行商標の登録が有効に存続していることも要件。",
+        "en": "Item (xi) is the most frequently applied relative ground for refusal. The analysis requires both (1) similarity of the marks assessed by appearance, sound, concept, and trade circumstances, and (2) similarity of the designated goods or services. Neither element alone is sufficient. The earlier mark must also be a validly subsisting registration at the relevant time.",
+        "de": "Nr. 11 ist der am häufigsten angewendete relative Versagungsgrund. Die Analyse erfordert sowohl die Ähnlichkeit der Marken als auch die Ähnlichkeit der designierten Waren oder Dienstleistungen. Keines der Elemente allein ist ausreichend. Die ältere Marke muss zum relevanten Zeitpunkt wirksam bestehen.",
+        "it": "Il n. 11 è il motivo relativo di rifiuto applicato più frequentemente. L'analisi richiede sia la somiglianza dei marchi che la somiglianza dei prodotti o servizi designati. Nessuno dei due elementi da solo è sufficiente. Il marchio anteriore deve anche essere una registrazione validamente in vigore al momento rilevante."
+      },
+      "practice": {
+        "ja": "出願前のクリアランス調査では11号リスクが最優先事項。J-PlatPatでの先行商標検索は必須だが、称呼・観念での類似は文字検索だけでは見落としやすいため、専門家による調査が推奨される。先行商標が不使用であれば50条の不使用取消審判でクリアできる可能性もある。",
+        "en": "In pre-filing clearance searches, Article 4(1)(xi) risk is the top priority to address. Searching J-PlatPat for prior marks is essential, but phonetic and conceptual similarities are easily missed by text-based searches alone, so professional search assistance is advisable. Where the conflicting prior mark has not been used, a non-use cancellation action under Article 50 may open a path to registration.",
+        "de": "Bei Voranmeldungsrecherchen hat das Risiko nach Nr. 11 höchste Priorität. Die Suche in J-PlatPat nach älteren Marken ist unerlässlich, aber phonetische und konzeptuelle Ähnlichkeiten werden bei textbasierten Suchen leicht übersehen. Wenn die kollidierende ältere Marke nicht benutzt wurde, kann ein Verfallsverfahren nach Artikel 50 einen Weg zur Eintragung öffnen.",
+        "it": "Nelle ricerche preliminari al deposito, il rischio ai sensi del n. 11 è la priorità principale. La ricerca su J-PlatPat per marchi anteriori è essenziale, ma le somiglianze fonetiche e concettuali sono facilmente mancate nelle ricerche solo testuali. Se il marchio anteriore in conflitto non è stato utilizzato, un'azione di decadenza per non uso può aprire una via alla registrazione."
+      }
+    },
+    "related_terms": [
+      "prior registered mark",
+      "similarity",
+      "designated goods",
+      "clearance search",
+      "J-PlatPat"
+    ],
+    "articles": [
+      "4-1-11"
+    ],
+    "tags": [
+      "relative grounds",
+      "article 4",
+      "prior mark",
+      "similarity",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0020",
+    "level": "basic",
+    "topic": {
+      "ja": "4条1項15号：出所混同のおそれ",
+      "en": "Article 4(1)(xv): likelihood of confusion as to source",
+      "de": "Artikel 4 Abs. 1 Nr. 15: Verwechslungsgefahr hinsichtlich der Herkunft",
+      "it": "Articolo 4 comma 1 n. 15: rischio di confusione sull'origine"
+    },
+    "summary": {
+      "ja": "他人の業務に係る商品・役務と混同を生ずるおそれがある商標は登録できない。",
+      "en": "A mark that is likely to cause confusion with another party's goods or services cannot be registered.",
+      "de": "Eine Marke, die geeignet ist, Verwechslungen mit den Waren oder Dienstleistungen einer anderen Partei zu verursachen, kann nicht eingetragen werden.",
+      "it": "Un marchio che è idoneo a causare confusione con i prodotti o servizi di un'altra parte non può essere registrato."
+    },
+    "notes": {
+      "law": {
+        "ja": "15号は11号より広い保護を与える規定であり、商標・商品が非類似であっても混同のおそれがあれば適用される。特に著名商標との関係で重要。判断要素として、①引用商標の著名性、②両商標の類似性の程度、③指定商品・役務の関連性、④出所混同の現実的可能性等が考慮される。いわゆる「広義の混同（関連会社と誤認される場合を含む）」も含む。",
+        "en": "Item (xv) provides broader protection than item (xi): it applies even where the marks or goods are not similar, if confusion as to commercial origin is likely. It is particularly important in the context of well-known marks. Factors considered include: the degree of fame of the cited mark, the degree of similarity between the marks, the relatedness of the designated goods or services, and the realistic likelihood of confusion. It covers both direct confusion and indirect confusion, including cases where consumers may believe the applicant is affiliated with the owner of the earlier mark.",
+        "de": "Nr. 15 bietet einen breiteren Schutz als Nr. 11: Sie gilt auch dann, wenn die Marken oder Waren nicht ähnlich sind, sofern eine Verwechslungsgefahr hinsichtlich der betrieblichen Herkunft besteht. Berücksichtigte Faktoren sind der Bekanntheitsgrad der zitierten Marke, der Grad der Ähnlichkeit der Marken und die realistische Wahrscheinlichkeit einer Verwechslung.",
+        "it": "Il n. 15 fornisce una protezione più ampia del n. 11: si applica anche quando i marchi o i prodotti non sono simili, se è probabile la confusione sull'origine commerciale. È particolarmente importante nel contesto dei marchi notori. I fattori considerati includono il grado di notorietà del marchio citato e la probabilità realistica di confusione."
+      },
+      "practice": {
+        "ja": "著名ブランドとの「関連会社と思われる」混同リスクは、商品・役務が異なる分野でも生じうる。クリアランス調査では11号に加えて15号のリスクも評価することが重要。海外取引先には「likelihood of confusion」として説明できるが、日本では非類似商品・役務間の混同も対象となる点を強調する。",
+        "en": "The risk of indirect confusion—where consumers may mistakenly believe the applicant is affiliated with the owner of a well-known mark—can arise even across different product or service categories. Clearance searches should assess Article 4(1)(xv) risk in addition to item (xi). When explaining to overseas partners, note that Japanese law covers confusion even across dissimilar goods or services, which may go beyond what they are used to in their home jurisdiction.",
+        "de": "Das Risiko einer mittelbaren Verwechslung kann auch über verschiedene Produkt- oder Dienstleistungskategorien hinweg entstehen. Kollisionsrecherchen sollten neben Nr. 11 auch das Risiko nach Nr. 15 bewerten.",
+        "it": "Il rischio di confusione indiretta può sorgere anche tra diverse categorie di prodotti o servizi. Le ricerche preliminari dovrebbero valutare il rischio ai sensi del n. 15 oltre al n. 11."
+      }
+    },
+    "related_terms": [
+      "likelihood of confusion",
+      "well-known mark",
+      "indirect confusion",
+      "source confusion",
+      "affiliated company"
+    ],
+    "articles": [
+      "4-1-15"
+    ],
+    "tags": [
+      "relative grounds",
+      "article 4",
+      "confusion",
+      "well-known mark",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0021",
+    "level": "basic",
+    "topic": {
+      "ja": "4条1項16号：品質誤認のおそれ",
+      "en": "Article 4(1)(xvi): likelihood of quality deception",
+      "de": "Artikel 4 Abs. 1 Nr. 16: Gefahr der Qualitätstäuschung",
+      "it": "Articolo 4 comma 1 n. 16: rischio di inganno sulla qualità"
+    },
+    "summary": {
+      "ja": "商品の品質または役務の質について誤認を生ずるおそれがある商標は登録できない。",
+      "en": "A mark that is likely to cause deception as to the quality of goods or services cannot be registered.",
+      "de": "Eine Marke, die geeignet ist, eine Täuschung über die Qualität von Waren oder Dienstleistungen zu verursachen, kann nicht eingetragen werden.",
+      "it": "Un marchio idoneo a ingannare sulla qualità dei prodotti o servizi non può essere registrato."
+    },
+    "notes": {
+      "law": {
+        "ja": "16号は需要者保護の観点から、商品・役務の品質・質について虚偽の印象を与える商標を排除する。例えば、実際には天然素材でない商品に「シルク」「オーガニック」を含む商標を使用する場合などが典型。指定商品・役務との関係で品質の誤認が生じるかどうかが判断の核心であり、商標単体でなく指定商品・役務との組み合わせで評価される。",
+        "en": "Item (xvi) excludes marks that would give consumers a false impression about the quality of the goods or services, in the interest of consumer protection. A classic example is a mark containing words such as 'silk' or 'organic' for goods that are not in fact made from those materials. The key question is whether the mark, in combination with the designated goods or services, is likely to mislead consumers about quality; the assessment is always made in relation to the specific goods or services designated.",
+        "de": "Nr. 16 schließt Marken aus, die Verbrauchern einen falschen Eindruck über die Qualität der Waren oder Dienstleistungen vermitteln würden. Ein klassisches Beispiel ist eine Marke, die Wörter wie 'Seide' oder 'Bio' für Waren enthält, die tatsächlich nicht aus diesen Materialien bestehen. Die Beurteilung erfolgt stets in Bezug auf die designierten Waren oder Dienstleistungen.",
+        "it": "Il n. 16 esclude i marchi che darebbero ai consumatori una falsa impressione sulla qualità dei prodotti o servizi. Un esempio classico è un marchio contenente parole come 'seta' o 'biologico' per prodotti che non sono effettivamente realizzati con quei materiali. La valutazione viene sempre effettuata in relazione ai prodotti o servizi specificamente designati."
+      },
+      "practice": {
+        "ja": "ブランド名や商標に品質・素材・効能を示す語句を含める場合は、実際の商品・役務との整合性を慎重に確認する必要がある。特に健康食品・化粧品・繊維製品などの分野では16号リスクが高い。海外ブランドが日本語訳のキャッチフレーズを商標登録しようとする場合にも注意が必要。",
+        "en": "When a brand name or mark includes words suggesting quality, materials, or efficacy, carefully verify that these are consistent with the actual goods or services. The risk under item (xvi) is particularly high in sectors such as health foods, cosmetics, and textiles. Care is also needed when overseas brands seek to register Japanese-language translations of their taglines as trademarks.",
+        "de": "Wenn ein Markenname Wörter enthält, die Qualität, Materialien oder Wirksamkeit suggerieren, ist sorgfältig zu prüfen, ob diese mit den tatsächlichen Waren oder Dienstleistungen übereinstimmen. Das Risiko nach Nr. 16 ist besonders hoch in Bereichen wie Gesundheitsnahrung, Kosmetik und Textilien.",
+        "it": "Quando un nome di marca include parole che suggeriscono qualità, materiali o efficacia, verificare attentamente che queste siano coerenti con i prodotti o servizi effettivi. Il rischio ai sensi del n. 16 è particolarmente elevato in settori come alimenti salutistici, cosmetici e tessili."
+      }
+    },
+    "related_terms": [
+      "quality deception",
+      "misleading mark",
+      "consumer protection",
+      "designated goods"
+    ],
+    "articles": [
+      "4-1-16"
+    ],
+    "tags": [
+      "relative grounds",
+      "article 4",
+      "quality",
+      "deception",
+      "consumer protection",
+      "exam"
+    ]
+  },
+  {
+    "id": "tm-basic-0022",
+    "level": "basic",
+    "topic": {
+      "ja": "4条1項18号：形状等からなる商標",
+      "en": "Article 4(1)(xviii): marks consisting solely of functional shapes",
+      "de": "Artikel 4 Abs. 1 Nr. 18: Marken, die ausschließlich aus funktionalen Formen bestehen",
+      "it": "Articolo 4 comma 1 n. 18: marchi costituiti esclusivamente da forme funzionali"
+    },
+    "summary": {
+      "ja": "商品等の機能を確保するために不可欠な立体的形状のみからなる商標は登録できない。",
+      "en": "A mark consisting solely of a three-dimensional shape that is indispensable for ensuring the function of the goods cannot be registered.",
+      "de": "Eine Marke, die ausschließlich aus einer dreidimensionalen Form besteht, die für die Gewährleistung der Funktion der Waren unerlässlich ist, kann nicht eingetragen werden.",
+      "it": "Un marchio costituito esclusivamente da una forma tridimensionale indispensabile per garantire la funzione dei prodotti non può essere registrato."
+    },
+    "notes": {
+      "law": {
+        "ja": "18号は2015年の商標法改正により新設された規定で、立体商標・色彩商標・音商標等の新しいタイプの商標の登録が可能になったことに伴い、機能的形状の独占を防ぐために導入された。「不可欠な形状」とは、その形状を使用しなければ当該商品の機能を実現できない形状を指す。競業者が自由に使用できる必要がある形状については、特定人への独占を認めない趣旨。",
+        "en": "Item (xviii) was introduced by the 2015 amendment to the Trademark Act, which expanded registrable subject matter to include three-dimensional shapes, colors, and sounds. It prevents any party from monopolizing functional shapes that competitors must be free to use. An 'indispensable' shape means one without which the function of the goods cannot be achieved. The provision reflects the policy that functional features should remain in the public domain.",
+        "de": "Nr. 18 wurde durch die Markenrechtsänderung von 2015 eingeführt, die das eintragungs fähige Schutzgut auf dreidimensionale Formen, Farben und Klänge ausdehnte. Sie verhindert, dass jemand funktionale Formen monopolisiert, die Mitbewerber frei nutzen können müssen. Eine 'unerlässliche' Form ist eine, ohne die die Funktion der Waren nicht erreicht werden kann.",
+        "it": "Il n. 18 è stato introdotto dalla modifica del 2015 alla Legge sui Marchi, che ha ampliato la materia registrabile per includere forme tridimensionali, colori e suoni. Impedisce a qualsiasi parte di monopolizzare forme funzionali che i concorrenti devono essere liberi di utilizzare. Una forma 'indispensabile' è quella senza la quale la funzione dei prodotti non può essere raggiunta."
+      },
+      "practice": {
+        "ja": "製品の形状を立体商標として登録しようとする場合、機能的形状の部分は18号により保護されない。デザイン的要素（装飾的・識別的な形状）と機能的要素を分離して考える必要がある。また、意匠権との棲み分けも検討すること。海外取引先には「functional shape exclusion」として説明するとわかりやすい。",
+        "en": "When seeking to register a product's shape as a three-dimensional trademark, any part that constitutes a functional shape will be excluded under item (xviii). It is necessary to distinguish between the decorative or distinctive elements of the shape and its functional elements. The relationship with design right protection should also be considered. Explaining this as a functional shape exclusion is effective with overseas partners.",
+        "de": "Wenn versucht wird, die Form eines Produkts als dreidimensionale Marke einzutragen, wird jeder Teil, der eine funktionale Form darstellt, nach Nr. 18 ausgeschlossen. Es ist notwendig, zwischen dekorativen oder unterscheidenden Elementen der Form und ihren funktionalen Elementen zu unterscheiden.",
+        "it": "Quando si cerca di registrare la forma di un prodotto come marchio tridimensionale, qualsiasi parte che costituisce una forma funzionale sarà esclusa ai sensi del n. 18. È necessario distinguere tra gli elementi decorativi o distintivi della forma e i suoi elementi funzionali."
+      }
+    },
+    "related_terms": [
+      "functional shape",
+      "three-dimensional mark",
+      "shape mark",
+      "design right",
+      "2015 amendment"
+    ],
+    "articles": [
+      "4-1-18"
+    ],
+    "tags": [
+      "relative grounds",
+      "article 4",
+      "shape mark",
+      "functional shape",
+      "3D mark",
+      "exam"
+    ]
+  }
+]
