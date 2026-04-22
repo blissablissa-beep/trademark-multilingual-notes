@@ -6,7 +6,7 @@ const STATE = {
   bookmarksOnly: localStorage.getItem('tmn_bookmarks_only') === '1',
   bookmarks: new Set(JSON.parse(localStorage.getItem('tmn_bookmarks') || '[]')),
   query: '',
-  notesTab: 'law' // 'law' | 'practice'
+  notesTab: 'law'
 };
 
 const el = {
@@ -38,7 +38,6 @@ const UI_TEXT = {
     removeBookmark: 'ブックマーク解除',
     bookmarkOnly: 'ブックマークのみ',
     showingBookmarks: 'ブックマーク表示中',
-    topics: 'トピック',
     footer: 'このアプリは商談・実務のための参考用ツールであり、法的助言を提供するものではありません。'
   },
   en: {
@@ -56,7 +55,6 @@ const UI_TEXT = {
     removeBookmark: 'Remove bookmark',
     bookmarkOnly: 'Bookmarks only',
     showingBookmarks: 'Showing bookmarks',
-    topics: 'Topics',
     footer: 'This app is a practical reference tool for business discussions and does not constitute legal advice.'
   },
   de: {
@@ -74,7 +72,6 @@ const UI_TEXT = {
     removeBookmark: 'Lesezeichen entfernen',
     bookmarkOnly: 'Nur Lesezeichen',
     showingBookmarks: 'Lesezeichen werden angezeigt',
-    topics: 'Themen',
     footer: 'Diese App ist ein praktisches Nachschlagewerk für Geschäftsgespräche und stellt keine Rechtsberatung dar.'
   },
   it: {
@@ -92,7 +89,6 @@ const UI_TEXT = {
     removeBookmark: 'Rimuovi dai preferiti',
     bookmarkOnly: 'Solo preferiti',
     showingBookmarks: 'Visualizzazione preferiti',
-    topics: 'Argomenti',
     footer: 'Questa app è uno strumento pratico di riferimento per discussioni commerciali e non costituisce consulenza legale.'
   }
 };
@@ -118,7 +114,6 @@ function highlight(text = '', query = '') {
   return safe.replace(new RegExp(`(${escaped})`, 'ig'), '<mark>$1</mark>');
 }
 
-// Prefer selected language, then Japanese as base language, then English, then first available.
 function resolve(obj) {
   if (!obj || typeof obj !== 'object') return '';
   return obj[STATE.lang] || obj.ja || obj.en || Object.values(obj).find(Boolean) || '';
@@ -309,9 +304,12 @@ function syncFromHash() {
   STATE.currentTopicId = STATE.filteredTopics[0]?.id || STATE.topics[0]?.id || null;
 }
 
-// ── Sidebar (mobile) ──
+function isMobileLayout() {
+  return window.matchMedia('(max-width: 860px)').matches;
+}
 
 function openSidebar() {
+  if (!isMobileLayout()) return;
   el.sidebar.classList.add('open');
   el.sidebarOverlay.classList.add('active');
   el.sidebarOverlay.setAttribute('aria-hidden', 'false');
@@ -326,8 +324,6 @@ function closeSidebar() {
   el.menuBtn.setAttribute('aria-expanded', 'false');
   document.body.style.overflow = '';
 }
-
-// ── Init ──
 
 async function init() {
   el.languageSelect.value = STATE.lang;
@@ -354,12 +350,19 @@ async function init() {
   });
 
   el.menuBtn.addEventListener('click', () => {
+    if (!isMobileLayout()) return;
     const isOpen = el.sidebar.classList.contains('open');
     isOpen ? closeSidebar() : openSidebar();
   });
 
   el.sidebarCloseBtn.addEventListener('click', closeSidebar);
   el.sidebarOverlay.addEventListener('click', closeSidebar);
+
+  window.addEventListener('resize', () => {
+    if (!isMobileLayout()) {
+      closeSidebar();
+    }
+  });
 
   window.addEventListener('hashchange', () => {
     syncFromHash();
