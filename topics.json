@@ -1152,5 +1152,167 @@
       "2024 amendment",
       "exam"
     ]
+  },
+  {
+    "id": "tm-basic-0026",
+    "level": "basic",
+    "topic": {
+      "ja": "類似商標が出願中の場合：情報提供と自己出願",
+      "en": "Conflicting mark under examination: information submission and own filing",
+      "de": "Kollidierende Marke in der Prüfung: Informationseingabe und eigene Anmeldung",
+      "it": "Marchio in conflitto in fase di esame: presentazione di informazioni e deposito proprio"
+    },
+    "summary": {
+      "ja": "自己の商標と同一・類似の商標が審査中であることを発見した場合、特許庁への情報提供と並行して自己商標の出願を行うことが推奨される。",
+      "en": "If a conflicting mark is discovered during examination, it is advisable to submit information to the JPO and simultaneously file one's own trademark application.",
+      "de": "Wird eine kollidierende Marke während der Prüfung entdeckt, empfiehlt es sich, dem JPO Informationen einzureichen und gleichzeitig eine eigene Markenanmeldung einzureichen.",
+      "it": "Se si scopre un marchio in conflitto durante l'esame, è consigliabile presentare informazioni allo JPO e contemporaneamente depositare la propria domanda di marchio."
+    },
+    "notes": {
+      "law": {
+        "ja": "特許庁は、第三者から商標登録出願に係る拒絶理由となりうる情報の提供を受け付けている（情報提供制度）。提供できる情報の根拠条文としては、主に4条1項10号（未登録周知商標）、4条1項15号（出所混同のおそれ）、悪意出願が疑われる場合は4条1項7号・19号が考えられる。情報提供は審査官の職権判断を促すものであり、提供者が当事者となるわけではない。情報提供と並行して自己商標を出願することで、先願主義の下で権利確保を図ることができる。JPO情報提供制度：https://www.jpo.go.jp/system/trademark/shinsa/johotekyo/touroku_jouhou.html",
+        "en": "The JPO accepts submission of information from third parties regarding grounds for refusal relating to a pending trademark application (information submission system). Relevant statutory grounds include Article 4(1)(x) (unregistered well-known mark), Article 4(1)(xv) (likelihood of confusion as to source), and, where bad faith is suspected, Articles 4(1)(vii) and 4(1)(xix). The submission prompts the examiner to exercise official discretion; the submitter does not become a party to the proceedings. Filing one's own trademark application in parallel secures priority under the first-to-file principle. JPO information submission: https://www.jpo.go.jp/system/trademark/shinsa/johotekyo/touroku_jouhou.html",
+        "de": "Das JPO nimmt Informationseinreichungen von Dritten zu Zurückweisungsgründen für anhängige Markenanmeldungen entgegen. Relevante gesetzliche Grundlagen sind Artikel 4 Abs. 1 Nr. 10, Nr. 15 sowie bei Bösgläubigkeit Nr. 7 und Nr. 19. Die Einreichung veranlasst den Prüfer zur Amtshandlung; der Einreicher wird keine Partei. Die gleichzeitige Anmeldung der eigenen Marke sichert die Priorität.",
+        "it": "Lo JPO accetta la presentazione di informazioni da parte di terzi riguardo a motivi di rifiuto relativi a una domanda di marchio pendente. I fondamenti normativi rilevanti includono l'articolo 4 comma 1 nn. 10 e 15 e, in caso di sospetta malafede, nn. 7 e 19. La presentazione sollecita l'esaminatore ad esercitare il potere d'ufficio; il presentatore non diventa parte del procedimento. Depositare contemporaneamente la propria domanda garantisce la priorità."
+      },
+      "practice": {
+        "ja": "情報提供の実務ポイントは以下のとおり。①提供できるのは客観的な証拠に基づく情報に限られ、意見書的な主張は審査官に採用されにくい。②提供者への結果通知は原則としてなく、審査の進捗はJ-PlatPatで確認する。③自己出願を同時に行う場合、出願日が遅くなるほど先行出願との関係で不利になるため、発見後は速やかに出願することが重要。④海外権利者が直接情報提供を行う場合、日本語での書類作成が必要なため、現地代理人（弁理士）を通じて行うことが実務上不可欠。",
+        "en": "Key practical points for information submission: (1) Only objective, evidence-based information is accepted; advocacy-style arguments tend to carry less weight with examiners. (2) The submitter is not notified of the outcome; progress can be monitored via J-PlatPat. (3) If filing one's own application in parallel, speed is critical—the later the filing date, the greater the disadvantage relative to the conflicting application. (4) Foreign rights holders submitting information directly must prepare documents in Japanese, making engagement of a local patent attorney (benrishi) practically indispensable.",
+        "de": "Wichtige praktische Punkte zur Informationseinreichung: (1) Nur objektive, evidenzbasierte Informationen werden akzeptiert. (2) Der Einreicher wird über das Ergebnis nicht informiert; der Fortschritt kann über J-PlatPat verfolgt werden. (3) Bei gleichzeitiger Anmeldung ist Schnelligkeit entscheidend. (4) Ausländische Rechtsinhaber müssen Dokumente auf Japanisch einreichen, weshalb ein lokaler Patentanwalt (Benrishi) unerlässlich ist.",
+        "it": "Punti pratici chiave per la presentazione di informazioni: (1) Sono accettate solo informazioni obiettive basate su prove. (2) Il presentatore non viene informato dell'esito; i progressi possono essere monitorati tramite J-PlatPat. (3) Nel deposito parallelo, la velocità è fondamentale. (4) I titolari stranieri devono preparare documenti in giapponese, rendendo indispensabile l'assistenza di un avvocato brevettuale locale (benrishi)."
+      }
+    },
+    "related_terms": [
+      "information submission",
+      "JPO",
+      "J-PlatPat",
+      "own filing",
+      "first-to-file",
+      "well-known mark",
+      "bad faith"
+    ],
+    "articles": [
+      "4-1-7",
+      "4-1-10",
+      "4-1-15",
+      "4-1-19"
+    ],
+    "tags": [
+      "enforcement",
+      "information submission",
+      "examination",
+      "foreign rights holder",
+      "strategy"
+    ]
+  },
+  {
+    "id": "tm-basic-0027",
+    "level": "basic",
+    "topic": {
+      "ja": "類似商標の登録後：異議申立",
+      "en": "After registration of a conflicting mark: opposition",
+      "de": "Nach der Eintragung einer kollidierende Marke: Widerspruch",
+      "it": "Dopo la registrazione di un marchio in conflitto: opposizione"
+    },
+    "summary": {
+      "ja": "類似商標が登録された場合、登録公告日から2か月以内に異議申立を行うことができる。",
+      "en": "Where a conflicting mark has been registered, an opposition may be filed within two months from the date of the registration gazette publication.",
+      "de": "Wurde eine kollidierende Marke eingetragen, kann innerhalb von zwei Monaten ab dem Datum der Bekanntmachung im Markenblatt Widerspruch eingelegt werden.",
+      "it": "Se un marchio in conflitto è stato registrato, può essere presentata un'opposizione entro due mesi dalla data di pubblicazione nella gazzetta delle registrazioni."
+    },
+    "notes": {
+      "law": {
+        "ja": "商標法43条の2以下に基づき、何人も登録公告の日から2か月以内に異議申立を行うことができる。申立理由として援用できる主な条文は、4条1項10号（未登録周知商標）、4条1項15号（出所混同のおそれ）、4条1項7号（公序良俗・悪意出願）、4条1項19号（不正目的による著名商標の冒用）。異議申立は登録の取消しを求めるものであり、申立人は利害関係を要しない（何人も申立可能）。審理は書面審理が原則。2か月の申立期間は不変期間であり、延長は認められない。",
+        "en": "Under Article 43-2 et seq. of the Trademark Act, any person may file an opposition within two months from the date of the registration gazette publication. Grounds that may be invoked include Article 4(1)(x) (unregistered well-known mark), Article 4(1)(xv) (likelihood of confusion), Article 4(1)(vii) (public order / bad faith), and Article 4(1)(xix) (bad-faith use of a well-known mark). The opposition seeks cancellation of the registration; the opponent need not have a direct interest (any person may file). Proceedings are conducted primarily on the basis of written submissions. The two-month opposition period is a strict, non-extendable deadline.",
+        "de": "Nach Artikel 43-2 ff. des Markengesetzes kann jede Person innerhalb von zwei Monaten ab dem Datum der Bekanntmachung Widerspruch einlegen. Geltend gemacht werden können insbesondere Artikel 4 Abs. 1 Nrn. 10, 15, 7 und 19. Der Widerspruch ist auf Löschung der Eintragung gerichtet; der Widersprechende muss kein direktes Interesse nachweisen. Das Verfahren findet überwiegend schriftlich statt. Die Zweimonatsfrist ist eine strikte, nicht verlängerbare Frist.",
+        "it": "Ai sensi dell'articolo 43-2 e seguenti della Legge sui Marchi, qualsiasi persona può presentare un'opposizione entro due mesi dalla data di pubblicazione. I motivi invocabili includono l'articolo 4 comma 1 nn. 10, 15, 7 e 19. L'opposizione mira alla cancellazione della registrazione; l'opponente non deve avere un interesse diretto. Il procedimento si svolge principalmente sulla base di memorie scritte. Il termine di due mesi è perentorio e non prorogabile."
+      },
+      "practice": {
+        "ja": "実務上の注意点は以下のとおり。①登録公告日の把握：J-PlatPatで定期的に競合商標を監視し、公告日を見逃さないことが重要。商標監視サービスの利用も有効。②申立書には証拠を添付する必要があり、周知性・著名性を示す証拠（売上・広告・使用実績等）を事前に整備しておくこと。③2か月という期間は非常に短いため、海外権利者は現地代理人（弁理士）と連携して迅速に対応できる体制を事前に構築しておくことが重要。④異議申立が認められた場合、当該商標登録は取り消される。認められなかった場合は審決取消訴訟に移行可能。",
+        "en": "Key practical points: (1) Monitoring publication dates: regular monitoring of J-PlatPat (or a trademark watch service) is essential to avoid missing the gazette publication date. (2) Evidence must accompany the opposition brief; compile evidence of well-known or famous status (sales, advertising, and use records) in advance. (3) The two-month window is extremely short, making it critical for foreign rights holders to establish a standing arrangement with a local patent attorney (benrishi) in advance. (4) If the opposition is upheld, the registration is cancelled. If dismissed, the opponent may proceed to an appeal to the Intellectual Property High Court.",
+        "de": "Wichtige praktische Punkte: (1) Überwachung der Veröffentlichungsdaten über J-PlatPat oder einen Markenüberwachungsdienst. (2) Beweise für Bekanntheit müssen dem Widerspruch beigefügt werden. (3) Die Zweimonatsfrist macht eine vorherige Einrichtung einer Zusammenarbeit mit einem lokalen Patentanwalt (Benrishi) unerlässlich. (4) Bei Erfolg wird die Eintragung gelöscht; bei Ablehnung ist eine Klage vor dem Intellectual Property High Court möglich.",
+        "it": "Punti pratici chiave: (1) Monitorare le date di pubblicazione tramite J-PlatPat o un servizio di sorveglianza. (2) Le prove di notorietà devono accompagnare il ricorso di opposizione. (3) I due mesi rendono essenziale stabilire in anticipo una collaborazione con un avvocato brevettuale locale (benrishi). (4) Se accolta, la registrazione è cancellata; se respinta, è possibile ricorrere all'Intellectual Property High Court."
+      }
+    },
+    "related_terms": [
+      "opposition",
+      "registration gazette",
+      "two-month deadline",
+      "cancellation",
+      "well-known mark",
+      "bad faith",
+      "J-PlatPat",
+      "trademark watch"
+    ],
+    "articles": [
+      "43-2",
+      "4-1-7",
+      "4-1-10",
+      "4-1-15",
+      "4-1-19"
+    ],
+    "tags": [
+      "enforcement",
+      "opposition",
+      "foreign rights holder",
+      "deadline",
+      "strategy"
+    ]
+  },
+  {
+    "id": "tm-basic-0028",
+    "level": "basic",
+    "topic": {
+      "ja": "類似商標の登録後：無効審判",
+      "en": "After registration of a conflicting mark: invalidation trial",
+      "de": "Nach der Eintragung einer kollidierende Marke: Nichtigkeitsverfahren",
+      "it": "Dopo la registrazione di un marchio in conflitto: procedimento di invalidità"
+    },
+    "summary": {
+      "ja": "異議申立期間を過ぎた登録商標については、無効審判（商標法46条）により登録の無効を求めることができる。ただし無効理由によっては除斥期間に注意が必要。",
+      "en": "Where the opposition period has passed, invalidation of a registered trademark may be sought through an invalidation trial under Article 46 of the Trademark Act. Depending on the ground invoked, the exclusion period must be carefully observed.",
+      "de": "Nach Ablauf der Widerspruchsfrist kann die Nichtigkeit einer eingetragenen Marke durch ein Nichtigkeitsverfahren nach Artikel 46 des Markengesetzes geltend gemacht werden. Je nach Nichtigkeitsgrund ist die Ausschlussfrist zu beachten.",
+      "it": "Dopo la scadenza del periodo di opposizione, la nullità di un marchio registrato può essere richiesta tramite un procedimento di invalidità ai sensi dell'articolo 46 della Legge sui Marchi. A seconda del motivo invocato, occorre prestare attenzione al periodo di esclusione."
+    },
+    "notes": {
+      "law": {
+        "ja": "商標法46条に基づく無効審判は、利害関係人が特許庁に対して請求する。主な無効理由は異議申立理由と共通しており、4条1項10号（未登録周知商標）、4条1項15号（出所混同のおそれ）、4条1項7号（公序良俗・悪意出願）、4条1項19号（不正目的による著名商標の冒用）が援用できる。重要なのは除斥期間（47条）：4条1項7号・8号・10号・15号・16号・17号等を理由とする場合、登録日から5年を経過すると無効審判を請求できなくなる。ただし、4条1項7号（悪意出願に基づく公序良俗違反）および4条1項19号（不正目的による著名商標の冒用）を理由とする場合は除斥期間の適用がなく、登録後何年経過しても無効審判を請求できる。",
+        "en": "An invalidation trial under Article 46 of the Trademark Act is filed by an interested party with the JPO. The main grounds mirror those available in opposition proceedings: Article 4(1)(x) (unregistered well-known mark), Article 4(1)(xv) (likelihood of confusion), Article 4(1)(vii) (public order / bad faith), and Article 4(1)(xix) (bad-faith use of a well-known mark). Critical is the exclusion period under Article 47: where grounds such as Articles 4(1)(vii), (viii), (x), (xv), (xvi), or (xvii) are invoked, the invalidation trial cannot be filed once five years have elapsed from the date of registration. However, where the ground is Article 4(1)(vii) based on a bad-faith application or Article 4(1)(xix), the exclusion period does not apply, and invalidation may be sought regardless of how many years have passed since registration.",
+        "de": "Ein Nichtigkeitsverfahren nach Artikel 46 wird von einer interessierten Partei beim JPO eingereicht. Die Hauptgründe entsprechen denen des Widerspruchsverfahrens: Artikel 4 Abs. 1 Nrn. 10, 15, 7 und 19. Entscheidend ist die Ausschlussfrist nach Artikel 47: Bei Gründen wie Nr. 7, 8, 10, 15, 16 oder 17 kann das Verfahren nicht mehr eingeleitet werden, wenn seit der Eintragung fünf Jahre vergangen sind. Wird jedoch Nr. 7 wegen bösgläubiger Anmeldung oder Nr. 19 geltend gemacht, gilt die Ausschlussfrist nicht.",
+        "it": "Un procedimento di invalidità ai sensi dell'articolo 46 viene depositato da una parte interessata presso lo JPO. I principali motivi corrispondono a quelli disponibili nei procedimenti di opposizione: articolo 4 comma 1 nn. 10, 15, 7 e 19. Fondamentale è il periodo di esclusione ai sensi dell'articolo 47: per motivi come i nn. 7, 8, 10, 15, 16 o 17, il procedimento non può essere avviato una volta trascorsi cinque anni dalla data di registrazione. Tuttavia, quando il motivo è il n. 7 basato su una domanda in malafede o il n. 19, il periodo di esclusione non si applica."
+      },
+      "practice": {
+        "ja": "実務上の判断フローは以下のとおり。①異議申立期間（登録公告から2か月）内か否かを確認→期間内なら異議申立（tm-basic-0027）を優先。②期間経過後→無効審判を検討。③登録日から5年以内か否かを確認：5年以内であれば4条1項10号・15号等を根拠にできる。④5年経過後は、悪意出願（4条1項7号・19号）を根拠とする場合のみ無効審判が可能（除斥期間の例外）。⑤悪意出願を主張する場合は、不正目的の立証が鍵となるため、出願経緯・商標の模倣状況・先使用の証拠等を入念に収集すること。⑥無効審判の審決に不服がある場合は、知的財産高等裁判所への審決取消訴訟が可能。海外権利者にとっては、登録日から5年という除斥期間の存在を意識した早期の権利行使が極めて重要。",
+        "en": "The practical decision flow is as follows: (1) Check whether the two-month opposition window (from gazette publication) is still open—if so, an opposition (see tm-basic-0027) is preferable. (2) After the opposition period has closed, consider an invalidation trial. (3) Check whether five years have elapsed from the registration date: if within five years, grounds such as Articles 4(1)(x) and (xv) are available. (4) After five years, only bad-faith grounds under Articles 4(1)(vii) and (xix) remain available (exception to the exclusion period). (5) When asserting bad faith, gathering compelling evidence of fraudulent intent is key: document the filing history, evidence of copying, and prior use records. (6) A dissatisfied party may appeal the JPO decision to the Intellectual Property High Court. For foreign rights holders, awareness of the five-year exclusion period and early enforcement action are critically important.",
+        "de": "Der praktische Entscheidungsablauf: (1) Prüfen, ob die zweimonatige Widerspruchsfrist noch läuft—falls ja, Widerspruch vorziehen. (2) Nach Ablauf der Frist Nichtigkeitsverfahren erwägen. (3) Prüfen, ob fünf Jahre seit der Eintragung vergangen sind: innerhalb fünf Jahren sind Nrn. 10 und 15 als Gründe nutzbar. (4) Nach fünf Jahren nur noch bösgläubige Gründe nach Nrn. 7 und 19 möglich. (5) Bei Bösgläubigkeit Belege für unlautere Absicht sammeln. (6) Klage vor dem Intellectual Property High Court bei Misserfolg möglich. Frühzeitiges Handeln ist für ausländische Rechtsinhaber entscheidend.",
+        "it": "Il flusso decisionale pratico: (1) Verificare se la finestra di opposizione di due mesi è ancora aperta—in caso affermativo, preferire l'opposizione. (2) Dopo la chiusura del periodo, considerare un procedimento di invalidità. (3) Verificare se sono trascorsi cinque anni dalla data di registrazione: entro cinque anni sono disponibili i motivi nn. 10 e 15. (4) Dopo cinque anni, solo i motivi di malafede ai sensi dei nn. 7 e 19 rimangono disponibili. (5) In caso di malafede, raccogliere prove convincenti dell'intento fraudolento. (6) Una parte scontenta può ricorrere all'Intellectual Property High Court."
+      }
+    },
+    "related_terms": [
+      "invalidation trial",
+      "exclusion period",
+      "five-year limit",
+      "bad faith",
+      "interested party",
+      "Article 46",
+      "Article 47",
+      "IP High Court"
+    ],
+    "articles": [
+      "46",
+      "47",
+      "4-1-7",
+      "4-1-10",
+      "4-1-15",
+      "4-1-19"
+    ],
+    "tags": [
+      "enforcement",
+      "invalidation",
+      "exclusion period",
+      "bad faith",
+      "foreign rights holder",
+      "strategy"
+    ]
   }
 ]
