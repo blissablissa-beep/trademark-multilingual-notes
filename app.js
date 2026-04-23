@@ -1,391 +1,390 @@
 const STATE = {
-topics: [],
-filteredTopics: [],
-currentTopicId: null,
-lang: localStorage.getItem(‘tmn_lang’) || ‘en’,
-bookmarksOnly: localStorage.getItem(‘tmn_bookmarks_only’) === ‘1’,
-bookmarks: new Set(JSON.parse(localStorage.getItem(‘tmn_bookmarks’) || ‘[]’)),
-query: ‘’,
-notesTab: ‘law’ // ‘law’ | ‘practice’
+  topics: [],
+  filteredTopics: [],
+  currentTopicId: null,
+  lang: localStorage.getItem('tmn_lang') || 'ja',
+  bookmarksOnly: localStorage.getItem('tmn_bookmarks_only') === '1',
+  bookmarks: new Set(JSON.parse(localStorage.getItem('tmn_bookmarks') || '[]')),
+  query: '',
+  notesTab: 'law'
 };
 
 const el = {
-languageSelect: document.getElementById(‘languageSelect’),
-searchInput: document.getElementById(‘searchInput’),
-topicList: document.getElementById(‘topicList’),
-detailCard: document.getElementById(‘detailCard’),
-topicItemTemplate: document.getElementById(‘topicItemTemplate’),
-bookmarkFilterBtn: document.getElementById(‘bookmarkFilterBtn’),
-menuBtn: document.getElementById(‘menuBtn’),
-sidebar: document.getElementById(‘sidebar’),
-sidebarOverlay: document.getElementById(‘sidebarOverlay’),
-sidebarCloseBtn: document.getElementById(‘sidebarCloseBtn’)
+  languageSelect: document.getElementById('languageSelect'),
+  searchInput: document.getElementById('searchInput'),
+  topicList: document.getElementById('topicList'),
+  detailCard: document.getElementById('detailCard'),
+  topicItemTemplate: document.getElementById('topicItemTemplate'),
+  bookmarkFilterBtn: document.getElementById('bookmarkFilterBtn'),
+  menuBtn: document.getElementById('menuBtn'),
+  sidebar: document.getElementById('sidebar'),
+  sidebarOverlay: document.getElementById('sidebarOverlay'),
+  sidebarCloseBtn: document.getElementById('sidebarCloseBtn')
 };
 
 const UI_TEXT = {
-ja: {
-noTopics: ‘該当するトピックがありません。’,
-selectTopic: ‘トピックを選択してください。’,
-failedLoad: ‘topics.json の読み込みに失敗しました。’,
-legalNote: ‘法律ノート’,
-practiceNote: ‘実務ノート’,
-keyTerms: ‘キーワード’,
-relevantArticles: ‘関連条文’,
-tags: ‘タグ’,
-none: ‘なし’,
-notListed: ‘記載なし’,
-addBookmark: ‘ブックマークに追加’,
-removeBookmark: ‘ブックマーク解除’,
-bookmarkOnly: ‘ブックマークのみ’,
-showingBookmarks: ‘ブックマーク表示中’,
-topics: ‘トピック’,
-footer: ‘このアプリは商談時の実務参考ツールであり、法的助言を構成するものではありません。’
-},
-en: {
-noTopics: ‘No topics found.’,
-selectTopic: ‘Select a topic.’,
-failedLoad: ‘Failed to load topics.json.’,
-legalNote: ‘Legal note’,
-practiceNote: ‘Practice note’,
-keyTerms: ‘Key terms’,
-relevantArticles: ‘Relevant articles’,
-tags: ‘Tags’,
-none: ‘None’,
-notListed: ‘Not listed’,
-addBookmark: ‘Add bookmark’,
-removeBookmark: ‘Remove bookmark’,
-bookmarkOnly: ‘Bookmarks only’,
-showingBookmarks: ‘Showing bookmarks’,
-topics: ‘Topics’,
-footer: ‘This app is a practical reference tool for business discussions and does not constitute legal advice.’
-},
-de: {
-noTopics: ‘Keine Themen gefunden.’,
-selectTopic: ‘Wählen Sie ein Thema aus.’,
-failedLoad: ‘topics.json konnte nicht geladen werden.’,
-legalNote: ‘Rechtlicher Hinweis’,
-practiceNote: ‘Praxishinweis’,
-keyTerms: ‘Schlüsselbegriffe’,
-relevantArticles: ‘Relevante Artikel’,
-tags: ‘Tags’,
-none: ‘Keine’,
-notListed: ‘Nicht aufgeführt’,
-addBookmark: ‘Lesezeichen hinzufügen’,
-removeBookmark: ‘Lesezeichen entfernen’,
-bookmarkOnly: ‘Nur Lesezeichen’,
-showingBookmarks: ‘Lesezeichen werden angezeigt’,
-topics: ‘Themen’,
-footer: ‘Diese App ist ein praktisches Nachschlagewerk für Geschäftsgespräche und stellt keine Rechtsberatung dar.’
-},
-it: {
-noTopics: ‘Nessun argomento trovato.’,
-selectTopic: ‘Seleziona un argomento.’,
-failedLoad: ‘Impossibile caricare topics.json.’,
-legalNote: ‘Nota legale’,
-practiceNote: ‘Nota pratica’,
-keyTerms: ‘Termini chiave’,
-relevantArticles: ‘Articoli rilevanti’,
-tags: ‘Tag’,
-none: ‘Nessuno’,
-notListed: ‘Non indicati’,
-addBookmark: ‘Aggiungi ai preferiti’,
-removeBookmark: ‘Rimuovi dai preferiti’,
-bookmarkOnly: ‘Solo preferiti’,
-showingBookmarks: ‘Visualizzazione preferiti’,
-topics: ‘Argomenti’,
-footer: ‘Questa app è uno strumento pratico di riferimento per discussioni commerciali e non costituisce consulenza legale.’
-}
+  ja: {
+    noTopics: '該当するトピックがありません。',
+    selectTopic: 'トピックを選択してください。',
+    failedLoad: 'topics.json の読み込みに失敗しました。',
+    legalNote: '法律ノート',
+    practiceNote: '実務ノート',
+    keyTerms: 'キーワード',
+    relevantArticles: '関連条文',
+    tags: 'タグ',
+    none: 'なし',
+    notListed: '記載なし',
+    addBookmark: 'ブックマークに追加',
+    removeBookmark: 'ブックマーク解除',
+    bookmarkOnly: 'ブックマークのみ',
+    showingBookmarks: 'ブックマーク表示中',
+    topics: 'トピック',
+    footer: 'このアプリは商談時の実務参考ツールであり、法的助言を構成するものではありません。'
+  },
+  en: {
+    noTopics: 'No topics found.',
+    selectTopic: 'Select a topic.',
+    failedLoad: 'Failed to load topics.json.',
+    legalNote: 'Legal note',
+    practiceNote: 'Practice note',
+    keyTerms: 'Key terms',
+    relevantArticles: 'Relevant articles',
+    tags: 'Tags',
+    none: 'None',
+    notListed: 'Not listed',
+    addBookmark: 'Add bookmark',
+    removeBookmark: 'Remove bookmark',
+    bookmarkOnly: 'Bookmarks only',
+    showingBookmarks: 'Showing bookmarks',
+    topics: 'Topics',
+    footer: 'This app is a practical reference tool for business discussions and does not constitute legal advice.'
+  },
+  de: {
+    noTopics: 'Keine Themen gefunden.',
+    selectTopic: 'Wählen Sie ein Thema aus.',
+    failedLoad: 'topics.json konnte nicht geladen werden.',
+    legalNote: 'Rechtlicher Hinweis',
+    practiceNote: 'Praxishinweis',
+    keyTerms: 'Schlüsselbegriffe',
+    relevantArticles: 'Relevante Artikel',
+    tags: 'Tags',
+    none: 'Keine',
+    notListed: 'Nicht aufgeführt',
+    addBookmark: 'Lesezeichen hinzufügen',
+    removeBookmark: 'Lesezeichen entfernen',
+    bookmarkOnly: 'Nur Lesezeichen',
+    showingBookmarks: 'Lesezeichen werden angezeigt',
+    topics: 'Themen',
+    footer: 'Diese App ist ein praktisches Nachschlagewerk für Geschäftsgespräche und stellt keine Rechtsberatung dar.'
+  },
+  it: {
+    noTopics: 'Nessun argomento trovato.',
+    selectTopic: 'Seleziona un argomento.',
+    failedLoad: 'Impossibile caricare topics.json.',
+    legalNote: 'Nota legale',
+    practiceNote: 'Nota pratica',
+    keyTerms: 'Termini chiave',
+    relevantArticles: 'Articoli rilevanti',
+    tags: 'Tag',
+    none: 'Nessuno',
+    notListed: 'Non indicati',
+    addBookmark: 'Aggiungi ai preferiti',
+    removeBookmark: 'Rimuovi dai preferiti',
+    bookmarkOnly: 'Solo preferiti',
+    showingBookmarks: 'Visualizzazione preferiti',
+    topics: 'Argomenti',
+    footer: 'Questa app è uno strumento pratico di riferimento per discussioni commerciali e non costituisce consulenza legale.'
+  }
 };
 
 function t(key) {
-return UI_TEXT[STATE.lang]?.[key] || UI_TEXT.en[key] || key;
+  return UI_TEXT[STATE.lang]?.[key] || UI_TEXT.ja[key] || UI_TEXT.en[key] || key;
 }
 
-function escapeHtml(str = ‘’) {
-return String(str).replace(/[&<>”’]/g, (m) => ({
-‘&’: ‘&’,
-‘<’: ‘<’,
-‘>’: ‘>’,
-‘”’: ‘"’,
-“’”: ‘'’
-}[m]));
+function escapeHtml(str = '') {
+  return String(str).replace(/[&<>"']/g, (m) => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  }[m]));
 }
 
-function highlight(text = ‘’, query = ‘’) {
-const safe = escapeHtml(String(text));
-if (!query.trim()) return safe;
-const escaped = query.trim().replace(/[.*+?^${}()|[]\]/g, ‘\$&’);
-return safe.replace(new RegExp(`(${escaped})`, ‘ig’), ‘<mark>$1</mark>’);
+function highlight(text = '', query = '') {
+  const safe = escapeHtml(String(text));
+  if (!query.trim()) return safe;
+  const escaped = query.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return safe.replace(new RegExp(`(${escaped})`, 'ig'), '<mark>$1</mark>');
 }
 
-// Resolve a multilingual field: prefer STATE.lang, fall back to ‘en’, then first available.
 function resolve(obj) {
-if (!obj || typeof obj !== ‘object’) return ‘’;
-return obj[STATE.lang] || obj.en || Object.values(obj).find(Boolean) || ‘’;
+  if (!obj || typeof obj !== 'object') return '';
+  return obj[STATE.lang] || obj.ja || obj.en || Object.values(obj).find(Boolean) || '';
 }
 
 function savePrefs() {
-localStorage.setItem(‘tmn_lang’, STATE.lang);
-localStorage.setItem(‘tmn_bookmarks_only’, STATE.bookmarksOnly ? ‘1’ : ‘0’);
-localStorage.setItem(‘tmn_bookmarks’, JSON.stringify([…STATE.bookmarks]));
+  localStorage.setItem('tmn_lang', STATE.lang);
+  localStorage.setItem('tmn_bookmarks_only', STATE.bookmarksOnly ? '1' : '0');
+  localStorage.setItem('tmn_bookmarks', JSON.stringify([...STATE.bookmarks]));
 }
 
 function matchesTopic(topic, q) {
-if (!q) return true;
+  if (!q) return true;
 
-const notesBag = [
-resolve(topic.notes?.law),
-resolve(topic.notes?.practice)
-];
+  const notesBag = [
+    resolve(topic.notes?.law),
+    resolve(topic.notes?.practice)
+  ];
 
-const bag = [
-resolve(topic.topic),
-resolve(topic.summary),
-…notesBag,
-…(topic.tags || []),
-…(topic.related_terms || [])
-].filter(Boolean).join(’ ’).toLowerCase();
+  const bag = [
+    resolve(topic.topic),
+    resolve(topic.summary),
+    ...notesBag,
+    ...(topic.tags || []),
+    ...(topic.related_terms || [])
+  ].filter(Boolean).join(' ').toLowerCase();
 
-return bag.includes(q.toLowerCase());
+  return bag.includes(q.toLowerCase());
 }
 
 function applyFilters() {
-STATE.filteredTopics = STATE.topics.filter((topic) => {
-const bookmarkOk = !STATE.bookmarksOnly || STATE.bookmarks.has(topic.id);
-return bookmarkOk && matchesTopic(topic, STATE.query);
-});
+  STATE.filteredTopics = STATE.topics.filter((topic) => {
+    const bookmarkOk = !STATE.bookmarksOnly || STATE.bookmarks.has(topic.id);
+    return bookmarkOk && matchesTopic(topic, STATE.query);
+  });
 
-if (!STATE.filteredTopics.some((tp) => tp.id === STATE.currentTopicId)) {
-STATE.currentTopicId = STATE.filteredTopics[0]?.id || null;
-}
+  if (!STATE.filteredTopics.some((tp) => tp.id === STATE.currentTopicId)) {
+    STATE.currentTopicId = STATE.filteredTopics[0]?.id || null;
+  }
 }
 
 function renderTopicList() {
-el.topicList.innerHTML = ‘’;
+  el.topicList.innerHTML = '';
 
-if (!STATE.filteredTopics.length) {
-el.topicList.innerHTML = `<p class="empty">${escapeHtml(t('noTopics'))}</p>`;
-return;
-}
+  if (!STATE.filteredTopics.length) {
+    el.topicList.innerHTML = `<p class="empty">${escapeHtml(t('noTopics'))}</p>`;
+    return;
+  }
 
-for (const topic of STATE.filteredTopics) {
-const node = el.topicItemTemplate.content.firstElementChild.cloneNode(true);
-node.dataset.id = topic.id;
+  for (const topic of STATE.filteredTopics) {
+    const node = el.topicItemTemplate.content.firstElementChild.cloneNode(true);
+    node.dataset.id = topic.id;
 
-```
-if (topic.id === STATE.currentTopicId) {
-  node.classList.add('active');
-}
+    if (topic.id === STATE.currentTopicId) {
+      node.classList.add('active');
+    }
 
-const title = resolve(topic.topic) || topic.id;
-node.querySelector('.topic-item-title').innerHTML = highlight(title, STATE.query);
+    const title = resolve(topic.topic) || topic.id;
+    node.querySelector('.topic-item-title').innerHTML = highlight(title, STATE.query);
 
-const meta = (topic.tags || []).slice(0, 3).join(' · ');
-node.querySelector('.topic-item-meta').innerHTML = highlight(meta, STATE.query);
+    const meta = (topic.tags || []).slice(0, 3).join(' · ');
+    node.querySelector('.topic-item-meta').innerHTML = highlight(meta, STATE.query);
 
-node.addEventListener('click', () => {
-  openTopic(topic.id);
-  closeSidebar();
-});
+    node.addEventListener('click', () => {
+      openTopic(topic.id);
+      closeSidebar();
+    });
 
-el.topicList.appendChild(node);
-```
-
-}
+    el.topicList.appendChild(node);
+  }
 }
 
 function openTopic(id) {
-STATE.currentTopicId = id;
-STATE.notesTab = ‘law’;
-location.hash = `#/topic/${encodeURIComponent(id)}`;
-render();
+  STATE.currentTopicId = id;
+  STATE.notesTab = 'law';
+  location.hash = `#/topic/${encodeURIComponent(id)}`;
+  render();
 }
 
 function toggleBookmark(id) {
-if (STATE.bookmarks.has(id)) {
-STATE.bookmarks.delete(id);
-} else {
-STATE.bookmarks.add(id);
-}
-savePrefs();
-applyFilters();
-render();
+  if (STATE.bookmarks.has(id)) {
+    STATE.bookmarks.delete(id);
+  } else {
+    STATE.bookmarks.add(id);
+  }
+  savePrefs();
+  applyFilters();
+  render();
 }
 
 function renderDetail() {
-const topic = STATE.topics.find((tp) => tp.id === STATE.currentTopicId);
+  const topic = STATE.topics.find((tp) => tp.id === STATE.currentTopicId);
 
-if (!topic) {
-el.detailCard.innerHTML = `<p class="empty">${escapeHtml(t('selectTopic'))}</p>`;
-return;
-}
-
-const title = resolve(topic.topic) || topic.id;
-const summary = resolve(topic.summary);
-const lawNote = resolve(topic.notes?.law);
-const practiceNote = resolve(topic.notes?.practice);
-const isBookmarked = STATE.bookmarks.has(topic.id);
-const activeTab = STATE.notesTab;
-
-el.detailCard.innerHTML = `<div class="badges"> <span class="badge">${escapeHtml(STATE.lang.toUpperCase())}</span> <span class="badge">${escapeHtml(topic.id)}</span> ${topic.level ?`<span class="badge">${escapeHtml(topic.level)}</span>` : ‘’}
-</div>
-
-```
-<h2>${escapeHtml(title)}</h2>
-<p class="summary">${highlight(summary, STATE.query)}</p>
-
-<div class="notes-tabs">
-  <button class="notes-tab ${activeTab === 'law' ? 'active' : ''}" data-tab="law" type="button">
-    ${escapeHtml(t('legalNote'))}
-  </button>
-  <button class="notes-tab ${activeTab === 'practice' ? 'active' : ''}" data-tab="practice" type="button">
-    ${escapeHtml(t('practiceNote'))}
-  </button>
-</div>
-
-<div class="notes-panel">
-  ${activeTab === 'law'
-    ? (highlight(lawNote, STATE.query) || `<span class="muted">${escapeHtml(t('notListed'))}</span>`)
-    : (highlight(practiceNote, STATE.query) || `<span class="muted">${escapeHtml(t('notListed'))}</span>`)
+  if (!topic) {
+    el.detailCard.innerHTML = `<p class="empty">${escapeHtml(t('selectTopic'))}</p>`;
+    return;
   }
-</div>
 
-<h3 class="section-title">${escapeHtml(t('keyTerms'))}</h3>
-<div class="related-list">
-  ${(topic.related_terms || []).map((x) => `<span class="link-chip">${highlight(x, STATE.query)}</span>`).join('') || `<span class="muted">${escapeHtml(t('none'))}</span>`}
-</div>
+  const title = resolve(topic.topic) || topic.id;
+  const summary = resolve(topic.summary);
+  const lawNote = resolve(topic.notes?.law);
+  const practiceNote = resolve(topic.notes?.practice);
+  const isBookmarked = STATE.bookmarks.has(topic.id);
+  const activeTab = STATE.notesTab;
 
-<h3 class="section-title">${escapeHtml(t('relevantArticles'))}</h3>
-<div class="article-list">
-  ${(topic.articles || []).map((x) => `<span class="article-chip">Art. ${escapeHtml(x)}</span>`).join('') || `<span class="muted">${escapeHtml(t('notListed'))}</span>`}
-</div>
+  el.detailCard.innerHTML = `
+    <div class="badges">
+      <span class="badge">${escapeHtml(STATE.lang.toUpperCase())}</span>
+      <span class="badge">${escapeHtml(topic.id)}</span>
+      ${topic.level ? `<span class="badge">${escapeHtml(topic.level)}</span>` : ''}
+    </div>
 
-<h3 class="section-title">${escapeHtml(t('tags'))}</h3>
-<div class="tag-list">
-  ${(topic.tags || []).map((x) => `<span class="tag">${highlight(x, STATE.query)}</span>`).join('') || `<span class="muted">${escapeHtml(t('none'))}</span>`}
-</div>
+    <h2>${escapeHtml(title)}</h2>
+    <p class="summary">${highlight(summary, STATE.query)}</p>
 
-<div class="actions">
-  <button id="bookmarkBtn" class="primary-btn${isBookmarked ? ' bookmarked' : ''}" type="button">
-    ${isBookmarked ? escapeHtml(t('removeBookmark')) : escapeHtml(t('addBookmark'))}
-  </button>
-</div>
+    <div class="notes-tabs">
+      <button class="notes-tab ${activeTab === 'law' ? 'active' : ''}" data-tab="law" type="button">
+        ${escapeHtml(t('legalNote'))}
+      </button>
+      <button class="notes-tab ${activeTab === 'practice' ? 'active' : ''}" data-tab="practice" type="button">
+        ${escapeHtml(t('practiceNote'))}
+      </button>
+    </div>
 
-<p class="footer-note">${escapeHtml(t('footer'))}</p>
-```
+    <div class="notes-panel">
+      ${activeTab === 'law'
+        ? (highlight(lawNote, STATE.query) || `<span class="muted">${escapeHtml(t('notListed'))}</span>`)
+        : (highlight(practiceNote, STATE.query) || `<span class="muted">${escapeHtml(t('notListed'))}</span>`)
+      }
+    </div>
 
-`;
+    <h3 class="section-title">${escapeHtml(t('keyTerms'))}</h3>
+    <div class="related-list">
+      ${(topic.related_terms || []).map((x) => `<span class="link-chip">${highlight(x, STATE.query)}</span>`).join('') || `<span class="muted">${escapeHtml(t('none'))}</span>`}
+    </div>
 
-document.getElementById(‘bookmarkBtn’).addEventListener(‘click’, () => toggleBookmark(topic.id));
+    <h3 class="section-title">${escapeHtml(t('relevantArticles'))}</h3>
+    <div class="article-list">
+      ${(topic.articles || []).map((x) => `<span class="article-chip">Art. ${escapeHtml(x)}</span>`).join('') || `<span class="muted">${escapeHtml(t('notListed'))}</span>`}
+    </div>
 
-el.detailCard.querySelectorAll(’.notes-tab’).forEach((btn) => {
-btn.addEventListener(‘click’, () => {
-STATE.notesTab = btn.dataset.tab;
-renderDetail();
-});
-});
+    <h3 class="section-title">${escapeHtml(t('tags'))}</h3>
+    <div class="tag-list">
+      ${(topic.tags || []).map((x) => `<span class="tag">${highlight(x, STATE.query)}</span>`).join('') || `<span class="muted">${escapeHtml(t('none'))}</span>`}
+    </div>
+
+    <div class="actions">
+      <button id="bookmarkBtn" class="primary-btn${isBookmarked ? ' bookmarked' : ''}" type="button">
+        ${isBookmarked ? escapeHtml(t('removeBookmark')) : escapeHtml(t('addBookmark'))}
+      </button>
+    </div>
+
+    <p class="footer-note">${escapeHtml(t('footer'))}</p>
+  `;
+
+  document.getElementById('bookmarkBtn').addEventListener('click', () => toggleBookmark(topic.id));
+
+  el.detailCard.querySelectorAll('.notes-tab').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      STATE.notesTab = btn.dataset.tab;
+      renderDetail();
+    });
+  });
 }
 
 function syncControls() {
-el.languageSelect.value = STATE.lang;
-el.searchInput.value = STATE.query;
-el.bookmarkFilterBtn.setAttribute(‘aria-pressed’, String(STATE.bookmarksOnly));
-el.bookmarkFilterBtn.textContent = STATE.bookmarksOnly ? t(‘showingBookmarks’) : t(‘bookmarkOnly’);
+  el.languageSelect.value = STATE.lang;
+  el.searchInput.value = STATE.query;
+  el.bookmarkFilterBtn.setAttribute('aria-pressed', String(STATE.bookmarksOnly));
+  el.bookmarkFilterBtn.textContent = STATE.bookmarksOnly ? t('showingBookmarks') : t('bookmarkOnly');
 }
 
 function render() {
-syncControls();
-renderTopicList();
-renderDetail();
+  syncControls();
+  renderTopicList();
+  renderDetail();
 }
 
 function syncFromHash() {
-const match = location.hash.match(/^#/topic/(.+)$/);
-if (match) {
-const id = decodeURIComponent(match[1]);
-if (STATE.topics.some((tp) => tp.id === id)) {
-STATE.currentTopicId = id;
-return;
+  const match = location.hash.match(/^#\/topic\/(.+)$/);
+  if (match) {
+    const id = decodeURIComponent(match[1]);
+    if (STATE.topics.some((tp) => tp.id === id)) {
+      STATE.currentTopicId = id;
+      return;
+    }
+  }
+  STATE.currentTopicId = STATE.filteredTopics[0]?.id || STATE.topics[0]?.id || null;
 }
-}
-STATE.currentTopicId = STATE.filteredTopics[0]?.id || STATE.topics[0]?.id || null;
-}
-
-// ── Sidebar (mobile) ──
 
 function openSidebar() {
-el.sidebar.classList.add(‘open’);
-el.sidebarOverlay.classList.add(‘active’);
-el.sidebarOverlay.setAttribute(‘aria-hidden’, ‘false’);
-el.menuBtn.setAttribute(‘aria-expanded’, ‘true’);
-document.body.style.overflow = ‘hidden’;
+  el.sidebar.classList.add('open');
+  el.sidebarOverlay.classList.add('active');
+  el.sidebarOverlay.setAttribute('aria-hidden', 'false');
+  el.menuBtn.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
 }
 
 function closeSidebar() {
-el.sidebar.classList.remove(‘open’);
-el.sidebarOverlay.classList.remove(‘active’);
-el.sidebarOverlay.setAttribute(‘aria-hidden’, ‘true’);
-el.menuBtn.setAttribute(‘aria-expanded’, ‘false’);
-document.body.style.overflow = ‘’;
+  el.sidebar.classList.remove('open');
+  el.sidebarOverlay.classList.remove('active');
+  el.sidebarOverlay.setAttribute('aria-hidden', 'true');
+  el.menuBtn.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
 }
-
-// ── Init ──
 
 async function init() {
-el.languageSelect.value = STATE.lang;
+  el.languageSelect.addEventListener('change', (e) => {
+    STATE.lang = e.target.value;
+    savePrefs();
+    render();
+  });
 
-el.languageSelect.addEventListener(‘change’, (e) => {
-STATE.lang = e.target.value;
-savePrefs();
-render();
-});
+  el.searchInput.addEventListener('input', (e) => {
+    STATE.query = e.target.value.trim();
+    applyFilters();
+    syncFromHash();
+    render();
+  });
 
-el.searchInput.addEventListener(‘input’, (e) => {
-STATE.query = e.target.value.trim();
-applyFilters();
-syncFromHash();
-render();
-});
+  el.bookmarkFilterBtn.addEventListener('click', () => {
+    STATE.bookmarksOnly = !STATE.bookmarksOnly;
+    savePrefs();
+    applyFilters();
+    syncFromHash();
+    render();
+  });
 
-el.bookmarkFilterBtn.addEventListener(‘click’, () => {
-STATE.bookmarksOnly = !STATE.bookmarksOnly;
-savePrefs();
-applyFilters();
-syncFromHash();
-render();
-});
+  if (el.menuBtn) {
+    el.menuBtn.addEventListener('click', () => {
+      const isOpen = el.sidebar.classList.contains('open');
+      isOpen ? closeSidebar() : openSidebar();
+    });
+  }
 
-el.menuBtn.addEventListener(‘click’, () => {
-const isOpen = el.sidebar.classList.contains(‘open’);
-isOpen ? closeSidebar() : openSidebar();
-});
+  if (el.sidebarCloseBtn) {
+    el.sidebarCloseBtn.addEventListener('click', closeSidebar);
+  }
 
-el.sidebarCloseBtn.addEventListener(‘click’, closeSidebar);
-el.sidebarOverlay.addEventListener(‘click’, closeSidebar);
+  if (el.sidebarOverlay) {
+    el.sidebarOverlay.addEventListener('click', closeSidebar);
+  }
 
-window.addEventListener(‘hashchange’, () => {
-syncFromHash();
-render();
-});
+  window.addEventListener('hashchange', () => {
+    syncFromHash();
+    render();
+  });
 
-// Cache busting: version string derived from current date at build/load time
-const cacheBust = `v=${new Date().toISOString().slice(0, 10)}`;
-const res = await fetch(`./topics.json?${cacheBust}`, { cache: ‘no-store’ });
-const data = await res.json();
+  const cacheBust = `v=${new Date().toISOString().slice(0, 10)}`;
+  const res = await fetch(`./topics.json?${cacheBust}`, { cache: 'no-store' });
+  const data = await res.json();
 
-STATE.topics = data;
-applyFilters();
-syncFromHash();
-render();
+  STATE.topics = data;
+  applyFilters();
+  syncFromHash();
+  render();
 
-if (‘serviceWorker’ in navigator) {
-window.addEventListener(‘load’, () => {
-navigator.serviceWorker.register(’./sw.js’).catch(() => {});
-});
-}
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js').catch(() => {});
+    });
+  }
 }
 
 init().catch((err) => {
-console.error(err);
-el.detailCard.innerHTML = `<p class="empty">${escapeHtml(t('failedLoad'))}</p>`;
+  console.error(err);
+  if (el.detailCard) {
+    el.detailCard.innerHTML = `<p class="empty">${escapeHtml(t('failedLoad'))}</p>`;
+  }
 });
