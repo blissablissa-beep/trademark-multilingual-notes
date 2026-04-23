@@ -1314,5 +1314,57 @@
       "foreign rights holder",
       "strategy"
     ]
+  },
+  {
+    "id": "tm-basic-0029",
+    "level": "basic",
+    "topic": {
+      "ja": "コンフリクト商標への対処：不使用取消審判",
+      "en": "Addressing a conflicting mark: non-use cancellation trial",
+      "de": "Vorgehen gegen eine kollidierende Marke: Verfallsverfahren wegen Nichtbenutzung",
+      "it": "Affrontare un marchio in conflitto: procedimento di decadenza per non uso"
+    },
+    "summary": {
+      "ja": "登録商標が継続して3年以上使用されていない場合、何人も不使用取消審判（商標法50条）を請求できる。コンフリクト商標の障害を除去する手段として、無効審判と並んで重要な選択肢となる。",
+      "en": "Where a registered trademark has not been used for a continuous period of three or more years, any person may file a non-use cancellation trial under Article 50 of the Trademark Act. This is an important tool alongside invalidation for removing the obstacle of a conflicting registered mark.",
+      "de": "Wenn eine eingetragene Marke ununterbrochen drei oder mehr Jahre lang nicht benutzt wurde, kann jede Person ein Verfallsverfahren wegen Nichtbenutzung nach Artikel 50 des Markengesetzes einleiten. Dies ist neben dem Nichtigkeitsverfahren ein wichtiges Instrument zur Beseitigung des Hindernisses einer kollidierende eingetragenen Marke.",
+      "it": "Quando un marchio registrato non è stato utilizzato per un periodo continuativo di tre o più anni, qualsiasi persona può avviare un procedimento di decadenza per non uso ai sensi dell'articolo 50 della Legge sui Marchi. Questo è uno strumento importante accanto all'invalidità per rimuovere l'ostacolo di un marchio registrato in conflitto."
+    },
+    "notes": {
+      "law": {
+        "ja": "商標法50条1項：継続して3年以上日本国内において商標権者・専用使用権者・通常使用権者のいずれもが指定商品・役務について登録商標を使用していない場合、何人も当該商標登録の取消しを求めて審判を請求できる。\n\n50条2項（立証責任の転換）：請求を受けた商標権者側が、審判請求の登録前3年以内に日本国内において指定商品・役務について登録商標を使用していたことを証明しなければならない。証明できない場合は、使用していない正当な理由を示す必要がある。立証責任が商標権者側に転換されている点が実務上重要。\n\n50条3項（一部取消）：指定商品・役務の一部についてのみ使用が証明された場合、使用が証明されなかった部分についてのみ取消しとなる（一部取消）。したがって、コンフリクト商標の指定商品・役務のうち、自己の出願に関連する区分・商品のみを狙った一部取消請求も戦略的に有効。",
+        "en": "Article 50(1): Where none of the trademark owner, exclusive licensee, or non-exclusive licensee has used the registered trademark in Japan in connection with the designated goods or services for a continuous period of three or more years, any person may file a trial seeking cancellation of the trademark registration.\n\nArticle 50(2) (reversal of burden of proof): Upon receiving the cancellation request, it is for the trademark owner to prove that the registered trademark was used in Japan in connection with the designated goods or services within the three years preceding the registration of the trial request. If use cannot be proven, the owner must show legitimate reasons for non-use. The reversal of the burden of proof to the trademark owner is practically significant.\n\nArticle 50(3) (partial cancellation): Where use is proven only in respect of some of the designated goods or services, cancellation applies only to those for which use has not been proven. Accordingly, a strategically targeted partial cancellation request—limited to the specific classes or goods relevant to the applicant's own filing—is a viable approach.",
+        "de": "Artikel 50 Abs. 1: Wenn weder der Markeninhaber, noch der ausschließliche oder nichtausschließliche Lizenznehmer die eingetragene Marke in Japan für die designierten Waren oder Dienstleistungen ununterbrochen drei oder mehr Jahre lang benutzt hat, kann jede Person ein Verfallsverfahren einleiten.\n\nArtikel 50 Abs. 2 (Beweislastumkehr): Der Markeninhaber muss nachweisen, dass die Marke innerhalb der drei Jahre vor der Eintragung des Verfahrensantrags benutzt wurde. Kann er dies nicht, muss er legitime Gründe für die Nichtbenutzung darlegen. Die Umkehr der Beweislast auf den Markeninhaber ist praktisch bedeutsam.\n\nArtikel 50 Abs. 3 (Teillöschung): Wird die Benutzung nur für einen Teil der designierten Waren oder Dienstleistungen nachgewiesen, erfolgt die Löschung nur für den nicht nachgewiesenen Teil. Ein gezielter Teillöschungsantrag ist daher strategisch sinnvoll.",
+        "it": "Articolo 50 comma 1: Quando né il titolare del marchio, né il licenziatario esclusivo o non esclusivo ha utilizzato il marchio registrato in Giappone per i prodotti o servizi designati per un periodo continuativo di tre o più anni, qualsiasi persona può avviare un procedimento di decadenza.\n\nArticolo 50 comma 2 (inversione dell'onere della prova): Il titolare del marchio deve dimostrare che il marchio registrato è stato utilizzato in Giappone nei tre anni precedenti la registrazione della domanda di procedimento. Se non può provarlo, deve indicare ragioni legittime per il non uso. L'inversione dell'onere della prova al titolare è praticamente significativa.\n\nArticolo 50 comma 3 (cancellazione parziale): Se l'uso è provato solo per alcuni dei prodotti o servizi designati, la cancellazione si applica solo a quelli per cui l'uso non è stato provato. Una domanda di cancellazione parziale mirata è quindi strategicamente valida."
+      },
+      "practice": {
+        "ja": "不使用取消審判を活用する際の実務上のポイントは以下のとおり。\n\n①無効審判との使い分け：無効審判（tm-basic-0028）は登録の瑕疵を理由とする遡及的な取消しであるのに対し、不使用取消審判は使用の不存在を理由とする将来的な取消しであり、除斥期間の問題がない。そのため、5年除斥期間を過ぎたコンフリクト商標で悪意も立証しにくい場合に特に有効。\n\n②自己出願との組み合わせ：不使用取消審判の請求と同時に自己の商標を出願しておくことで、取消審決確定後に優先的な地位を確保しやすくなる。\n\n③調査の重要性：審判請求前に、対象商標の実際の使用状況（日本国内のウェブサイト・広告・店舗・商品実物等）を調査しておくこと。商標権者が使用証拠を提出できない場合に有利に働く。\n\n④一部取消の戦略的活用：コンフリクト商標の全指定商品・役務を取り消す必要がない場合は、自己出願に関連する区分・商品のみを対象とした一部取消請求により手続を効率化できる。\n\n⑤海外権利者への説明：「登録しているが実際には使っていない商標」を理由に取消が可能であることは、use-it-or-lose-itの原則として海外代理人にも理解しやすい。",
+        "en": "Key practical points when using the non-use cancellation trial:\n\n(1) Choosing between invalidation and non-use cancellation: An invalidation trial (tm-basic-0028) retroactively cancels a registration on the basis of a defect at the time of registration, whereas a non-use cancellation results in prospective cancellation based on subsequent non-use and is not subject to any exclusion period. It is therefore particularly useful where the five-year exclusion period has expired and bad faith is difficult to establish.\n\n(2) Combining with own filing: Filing one's own trademark application at the same time as the cancellation request helps secure a favorable position once the cancellation decision becomes final.\n\n(3) Pre-filing investigation: Before filing, investigate the actual use of the target mark in Japan (website, advertising, retail presence, physical products, etc.). The inability of the trademark owner to produce use evidence works in the petitioner's favor.\n\n(4) Strategic use of partial cancellation: Where it is unnecessary to cancel all designated goods or services, a partial cancellation request limited to the classes or goods relevant to one's own application streamlines the proceedings.\n\n(5) Explaining to overseas clients: The concept that a registered but unused mark can be cancelled resonates readily with overseas counsel and clients as a use-it-or-lose-it principle.",
+        "de": "Wichtige praktische Punkte bei der Nutzung des Verfallsverfahrens:\n\n(1) Wahl zwischen Nichtigkeits- und Verfallsverfahren: Das Nichtigkeitsverfahren beseitigt eine Eintragung rückwirkend wegen eines Mangels bei der Eintragung, während das Verfallsverfahren zu einer zukunftsgerichteten Löschung wegen nachträglicher Nichtbenutzung führt und keiner Ausschlussfrist unterliegt. Es ist daher besonders nützlich, wenn die Fünfjahresfrist abgelaufen ist und Bösgläubigkeit schwer nachweisbar ist.\n\n(2) Kombination mit eigener Anmeldung: Die gleichzeitige Einreichung einer eigenen Markenanmeldung sichert eine günstige Position nach Bestandskraft der Löschungsentscheidung.\n\n(3) Voruntersuchung: Vor der Antragstellung die tatsächliche Nutzung der Zielmarke in Japan untersuchen.\n\n(4) Strategische Teillöschung: Ein auf relevante Klassen beschränkter Teillöschungsantrag rationalisiert das Verfahren.\n\n(5) Erklärung gegenüber ausländischen Mandanten: Das Use-it-or-lose-it-Prinzip ist für ausländische Kollegen leicht verständlich.",
+        "it": "Punti pratici chiave nell'utilizzo del procedimento di decadenza per non uso:\n\n(1) Scelta tra invalidità e decadenza per non uso: Il procedimento di invalidità cancella retroattivamente una registrazione per un vizio al momento della registrazione, mentre la decadenza per non uso comporta una cancellazione prospettica per non uso successivo e non è soggetta a periodi di esclusione. È quindi particolarmente utile quando il periodo di esclusione quinquennale è scaduto e la malafede è difficile da dimostrare.\n\n(2) Combinazione con deposito proprio: Depositare contemporaneamente la propria domanda di marchio aiuta a garantire una posizione favorevole una volta che la decisione di cancellazione diventa definitiva.\n\n(3) Indagine preliminare: Prima del deposito, indagare l'uso effettivo del marchio target in Giappone.\n\n(4) Uso strategico della cancellazione parziale: Una domanda di cancellazione parziale limitata alle classi rilevanti razionalizza il procedimento.\n\n(5) Spiegazione ai clienti stranieri: Il principio use-it-or-lose-it è facilmente comprensibile per colleghi e clienti stranieri."
+      }
+    },
+    "related_terms": [
+      "non-use cancellation",
+      "three-year period",
+      "burden of proof",
+      "partial cancellation",
+      "use evidence",
+      "Article 50",
+      "use-it-or-lose-it"
+    ],
+    "articles": [
+      "50",
+      "50-2",
+      "50-3"
+    ],
+    "tags": [
+      "enforcement",
+      "non-use cancellation",
+      "article 50",
+      "foreign rights holder",
+      "strategy",
+      "burden of proof"
+    ]
   }
 ]
