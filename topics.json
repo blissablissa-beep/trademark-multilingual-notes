@@ -1412,5 +1412,51 @@
       "protection extension",
       "japan-specific"
     ]
+  },
+  {
+    "id": "tm-basic-0031",
+    "level": "basic",
+    "topic": {
+      "ja": "団体商標制度",
+      "en": "Collective trademark system",
+      "de": "Kollektivmarkensystem",
+      "it": "Sistema del marchio collettivo"
+    },
+    "summary": {
+      "ja": "一般社団法人等の団体は、構成員に使用させる商標について団体商標の登録を受けることができる。",
+      "en": "Incorporated associations and similar bodies may obtain registration of a collective trademark for use by their members.",
+      "de": "Eingetragene Vereine und ähnliche Körperschaften können eine Kollektivmarke zur Nutzung durch ihre Mitglieder eintragen lassen.",
+      "it": "Le associazioni incorporate e gli enti simili possono ottenere la registrazione di un marchio collettivo per l'uso da parte dei loro membri."
+    },
+    "notes": {
+      "law": {
+        "ja": "商標法7条の定める団体商標制度の要点は以下のとおり。\n\n7条1項（出願適格者）：一般社団法人その他の社団（法人格を有しないもの及び会社を除く）、事業協同組合その他の特別の法律により設立された組合（法人格を有しないものを除く）、またはこれらに相当する外国の法人が、その構成員に使用させる商標について団体商標の登録を受けることができる。すなわち、個人や株式会社は出願できず、業界団体・協同組合・外国の同種法人が対象。\n\n7条2項（識別力の読替え）：3条1項の識別力要件の適用については、「自己の」を「自己又はその構成員の」と読み替える。これにより、団体自身は商標を使用しなくても構成員が使用していれば識別力の要件を満たしうる。\n\n7条3項（出願手続）：団体商標の登録を受けようとする者は、出願において出願人が1項所定の法人であることを証明する書面を特許庁長官に提出しなければならない。\n\n団体商標権者は商標を自ら使用するほか、構成員に使用させることができる。非構成員への使用許諾は認められない点が通常商標権と異なる。",
+        "en": "The key points of the collective trademark system under Article 7 are as follows.\n\nArticle 7(1) (eligible applicants): Incorporated associations and other associations (excluding unincorporated bodies and companies), cooperatives and other associations established under special statutes (excluding unincorporated bodies), and equivalent foreign legal entities may obtain registration of a collective trademark for use by their members. Individual persons and stock companies are therefore not eligible; the system is designed for trade associations, cooperatives, and equivalent foreign entities.\n\nArticle 7(2) (modified distinctiveness requirement): For the purpose of applying the distinctiveness requirement under Article 3(1), the words 'own' are read as 'own or members''. This means that the distinctiveness requirement can be satisfied by use among members even if the association itself does not use the mark.\n\nArticle 7(3) (application procedure): An applicant seeking registration of a collective trademark must submit to the Commissioner of the JPO a document proving that the applicant is a legal entity of the type specified in paragraph 1.\n\nThe collective trademark owner may use the mark itself and may also permit members to use it. Unlike ordinary trademark rights, licensing to non-members is not permitted.",
+        "de": "Die wesentlichen Punkte des Kollektivmarkensystems nach Artikel 7 sind folgende.\n\nArtikel 7 Abs. 1 (Antragsberechtigte): Eingetragene Vereine und andere Verbände (ausgenommen nicht eingetragene Körperschaften und Gesellschaften), Genossenschaften und andere nach besonderen Gesetzen gegründete Verbände (ausgenommen nicht eingetragene Körperschaften) sowie gleichwertige ausländische juristische Personen können eine Kollektivmarke zur Nutzung durch ihre Mitglieder eintragen lassen. Einzelpersonen und Aktiengesellschaften sind nicht antragsberechtigt.\n\nArtikel 7 Abs. 2 (modifiziertes Unterscheidungskrafterfordernis): Bei der Anwendung des Unterscheidungskrafterfordernisses nach Artikel 3 Abs. 1 werden die Worte 'eigenen' als 'eigenen oder der Mitglieder' gelesen. Damit kann das Unterscheidungskrafterfordernis durch die Nutzung durch Mitglieder erfüllt werden.\n\nArtikel 7 Abs. 3 (Anmeldeverfahren): Ein Anmelder muss dem JPO einen Nachweis vorlegen, dass er eine juristische Person der in Absatz 1 genannten Art ist.\n\nDer Kollektivmarkeninhaber darf die Marke selbst nutzen und Mitgliedern die Nutzung gestatten. Eine Lizenzierung an Nichtmitglieder ist nicht zulässig.",
+        "it": "I punti chiave del sistema del marchio collettivo ai sensi dell'articolo 7 sono i seguenti.\n\nArticolo 7 comma 1 (richiedenti idonei): Le associazioni incorporate e altre associazioni (esclusi gli enti non incorporati e le società), le cooperative e altre associazioni costituite ai sensi di statuti speciali (esclusi gli enti non incorporati), e le persone giuridiche straniere equivalenti possono ottenere la registrazione di un marchio collettivo per l'uso da parte dei loro membri. Le persone fisiche e le società per azioni non sono idonee.\n\nArticolo 7 comma 2 (requisito di distintività modificato): Per l'applicazione del requisito di distintività ai sensi dell'articolo 3 comma 1, le parole 'propri' si leggono come 'propri o dei membri'. Ciò significa che il requisito di distintività può essere soddisfatto dall'uso tra i membri.\n\nArticolo 7 comma 3 (procedura di domanda): Il richiedente deve presentare al Commissario dello JPO un documento che provi che il richiedente è una persona giuridica del tipo specificato al comma 1.\n\nIl titolare del marchio collettivo può usare il marchio esso stesso e può permettere ai membri di usarlo. A differenza dei diritti ordinari di marchio, la concessione di licenze a non membri non è consentita."
+      },
+      "practice": {
+        "ja": "団体商標制度の実務上のポイントは以下のとおり。\n\n①出願適格の確認：株式会社・個人事業主・法人格のない任意団体は出願できない。業界団体・協同組合・外国の同種法人（例：外国の業界協会・Chamber of Commerce等）が対象。海外団体が日本で団体商標を取得しようとする場合、7条1項の「これらに相当する外国の法人」に該当するかの確認が必要。\n\n②通常商標との主な違い：(a)構成員への使用許諾は可能だが非構成員へのライセンスは不可。(b)識別力は構成員の使用によっても充足される。(c)出願時に法人証明書類の提出が必要。\n\n③地域団体商標との違い：7条の団体商標は地域名を含まない通常の標章を対象とする一方、地域団体商標（7条の2）は「地域名＋商品・役務名」からなる標章が対象で産地表示的な機能を持つ。両制度は目的・要件が異なるため使い分けが重要（地域団体商標はtm-basic-0032参照）。\n\n④海外権利者への説明：日本の団体商標制度はEUの collective mark に相当する概念として説明できる。ただし出願適格者の範囲や非構成員へのライセンス禁止など日本固有の制約があるため、海外の業界団体が日本進出を検討する際は現地弁理士への相談が不可欠。",
+        "en": "Key practical points of the collective trademark system:\n\n(1) Confirming eligibility: Stock companies, individual proprietors, and unincorporated associations cannot file. The system is aimed at trade associations, cooperatives, and equivalent foreign legal entities (such as foreign trade associations or chambers of commerce). Where a foreign entity seeks to obtain a collective trademark in Japan, it must first confirm that it falls within the category of 'equivalent foreign legal entities' under Article 7(1).\n\n(2) Key differences from ordinary trademarks: (a) Use may be licensed to members but not to non-members. (b) Distinctiveness can be satisfied by use among members. (c) A document proving the applicant's legal entity status must be submitted at the time of application.\n\n(3) Difference from regional collective trademarks: Article 7 collective trademarks cover ordinary marks not necessarily linked to a geographic name, whereas regional collective trademarks under Article 7-2 cover marks consisting of a geographic name combined with a product or service name, functioning as geographical indications. The two systems serve different purposes and have different requirements (see tm-basic-0032 for regional collective trademarks).\n\n(4) Explaining to overseas clients: The Japanese collective trademark system can be explained as broadly analogous to the EU collective mark concept. However, Japan-specific constraints—such as the restricted pool of eligible applicants and the prohibition on licensing to non-members—mean that overseas trade associations planning Japan entry should consult a local patent attorney.",
+        "de": "Wichtige praktische Punkte des Kollektivmarkensystems:\n\n(1) Überprüfung der Antragsberechtigung: Aktiengesellschaften, Einzelunternehmer und nicht eingetragene Verbände können keine Anträge stellen. Das System richtet sich an Branchenverbände, Genossenschaften und gleichwertige ausländische juristische Personen. Ausländische Verbände müssen prüfen, ob sie unter die 'gleichwertigen ausländischen juristischen Personen' nach Artikel 7 Abs. 1 fallen.\n\n(2) Wesentliche Unterschiede zu gewöhnlichen Marken: (a) Nutzung darf Mitgliedern, aber nicht Nichtmitgliedern lizenziert werden. (b) Unterscheidungskraft kann durch Nutzung der Mitglieder erfüllt werden. (c) Bei der Anmeldung ist ein Nachweis des Rechtsstatus einzureichen.\n\n(3) Unterschied zu regionalen Kollektivmarken: Artikel-7-Kollektivmarken decken gewöhnliche Zeichen ab, während regionale Kollektivmarken nach Artikel 7-2 geografische Namen mit Produkt- oder Dienstleistungsbezeichnungen kombinieren.\n\n(4) Erklärung gegenüber ausländischen Mandanten: Das japanische Kollektivmarkensystem ist dem EU-Kollektivmarkenkonzept ähnlich, hat jedoch japanspezifische Einschränkungen.",
+        "it": "Punti pratici chiave del sistema del marchio collettivo:\n\n(1) Conferma dell'idoneità: Le società per azioni, i titolari individuali e le associazioni non incorporate non possono presentare domanda. Il sistema è destinato ad associazioni di categoria, cooperative ed entità giuridiche straniere equivalenti.\n\n(2) Differenze principali dai marchi ordinari: (a) L'uso può essere concesso in licenza ai membri ma non ai non membri. (b) La distintività può essere soddisfatta dall'uso tra i membri. (c) Un documento che provi lo status di persona giuridica deve essere presentato al momento della domanda.\n\n(3) Differenza dai marchi collettivi regionali: I marchi collettivi dell'articolo 7 coprono segni ordinari, mentre i marchi collettivi regionali ai sensi dell'articolo 7-2 coprono segni che combinano un nome geografico con una designazione di prodotto o servizio.\n\n(4) Spiegazione ai clienti stranieri: Il sistema giapponese del marchio collettivo è analogo al concetto di marchio collettivo UE, ma presenta vincoli specifici del Giappone."
+      }
+    },
+    "related_terms": [
+      "collective trademark",
+      "trade association",
+      "cooperative",
+      "member use",
+      "Article 7",
+      "regional collective trademark"
+    ],
+    "articles": ["7", "7-1", "7-2", "7-3"],
+    "tags": [
+      "collective trademark",
+      "article 7",
+      "association",
+      "member",
+      "japan-specific"
+    ]
   }
 ]
